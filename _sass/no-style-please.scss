@@ -18,7 +18,8 @@ body[a="dark"] {
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-html, body { background: white; }
+// <div style="background-image: url('path-to-image.jpg'); height: 500px; width: 100%;">
+html, body { background-image: url('/assets/images/a4blatt_hell.jpeg') }
 
 html { height: 100%; }
 
@@ -91,4 +92,20 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+a {
+  color: black; /* Sets default link color to black */
+}
+
+a:visited {
+  color: black; /* Changes the color of visited links to black */
+}
+
+a:hover {
+  color: gray; /* Optional: Changes link color to gray when hovered */
+}
+
+a:active {
+  color: darkgray; /* Optional: Changes link color to dark gray when clicked */
 }
