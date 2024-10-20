@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Power-Charge Your Node-Red Data with Grafana and InfluxDB</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Power-Charge Your Node-Red Data with Grafana and InfluxDB" />
+<meta name="author" content="Brian Junker-Latocha" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Store your data simply and visualize the crap out of it" />
+<meta property="og:description" content="Store your data simply and visualize the crap out of it" />
+<link rel="canonical" href="http://localhost:4000/grafana-and-nodered.html" />
+<meta property="og:url" content="http://localhost:4000/grafana-and-nodered.html" />
+<meta property="og:site_name" content="Brian Junker-Latocha" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-20T21:37:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Power-Charge Your Node-Red Data with Grafana and InfluxDB" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Brian Junker-Latocha"},"@type":"BlogPosting","description":"Store your data simply and visualize the crap out of it","dateModified":"2020-10-20T21:37:00+02:00","datePublished":"2020-10-20T21:37:00+02:00","headline":"Power-Charge Your Node-Red Data with Grafana and InfluxDB","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/grafana-and-nodered.html"},"url":"http://localhost:4000/grafana-and-nodered.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Brian Junker-Latocha" /><link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head><body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/">..</a><article>
+  <p class="post-meta">
+    <time datetime="2020-10-20 21:37:00 +0200">2020-10-20</time>
+  </p>
+  
+  <h1>Power-Charge Your Node-Red Data with Grafana and InfluxDB</h1>
+
+  <h2 id="you-should-be-saving-to-influxdb">You should be saving to InfluxDB</h2>
+
+<p>You’re saving sensor readings from Node-Red to text files? There is a more efficient and simple way to do it. <a href="https://www.influxdata.com/">InfluxDB</a> is an open-source database made especially for time-series data like sensor readings. And the great thing is, you can write to it directly from a Node-Red node.</p>
+<figure>
+<img src="/assets/images/mqttFlow.png" alt="Node-Red_flow" width="75%" />
+<figcaption>This flow writes incoming MQTT data directly to InfluxDB</figcaption>
+</figure>
+
+<p>It’s as easy as <code class="language-plaintext highlighter-rouge">cd</code>ing into your <code class="language-plaintext highlighter-rouge">.node-red</code> directory and installing the InfluxDB Node-Red package:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>node-red-contrib-influxdb
+</code></pre></div></div>
+
+<p>Once InfluxDB nodes appear in your node selector panel, just link them up to your desired output and configure.</p>
+<figure>
+<img src="/assets/images/influxDBnode.png" alt="influx_node" width="50%" />
+<figcaption>Configuring the InfluxDB Node-Red node</figcaption>
+</figure>
+
+<p>Of course, you’ll need to have installed InfluxDB on your server first! To do that, check out this <a href="https://simonhearne.com/2020/pi-influx-grafana/">great tutorial</a> by <a href="https://github.com/simonhearne">Simon Hearne</a>. It’s a nice step-by-step, and when you’re done you will also have installed <a href="https://grafana.com/">Grafana</a>, which means you’ll be ready to start inspecting your DB data, too!</p>
+
+<h2 id="grafana">Grafana</h2>
+
+<p>As soon as you’ve configured the InfluxDB credentials and DB name in Node-Red (providing your flow has received any data, in my case via the MQTT-in node), you will be able to access these so-called InfluxDB measurements in the Grafana panel setup page. Remember, first add the datasource to Grafana like this, under the datasources tab:</p>
+
+<p><img src="/assets/images/addDatasource.png" alt="add_datasource" width="50%" /></p>
+
+<p>Then go to your Grafana dashboard, add a new panel, and select your measurement from the <code class="language-plaintext highlighter-rouge">select measurement</code> dropdown field, which autopopulates from InfluxDB if there’s data in it:</p>
+
+<p><img src="/assets/images/load_influx_measurement.png" alt="measurement" width="100%" /></p>
+
+<p>As soon as you click somewhere else on the screen the datapoints will appear on the chart! If you don’t like the dots and prefer a continuous line just choose the setting <code class="language-plaintext highlighter-rouge">Stacking and null value</code> -&gt; <code class="language-plaintext highlighter-rouge">Null value</code> -&gt; <code class="language-plaintext highlighter-rouge">connected</code> here:</p>
+
+<p><img src="/assets/images/connectedGRafana.png" alt="connected" width="50%" /></p>
+
+<p>And if you want multiple lines on one graph, just press the <code class="language-plaintext highlighter-rouge">+ Query</code> button to add a new query:</p>
+
+<p><img src="/assets/images/plusQuery.png" alt="plusquery" width="50%" /></p>
+
+<p>Once you have a few panels configured, it may start to look like this:</p>
+
+<p><img src="../assets/images/grafanaDash.png" alt="" /></p>
+
+<p>And that is how you set up InfluxDB and Grafana with Node-Red. But there’s more…</p>
+
+<h2 id="pimp-out-grafana-with-raspberry-pi-metrics">Pimp out Grafana with Raspberry Pi metrics!</h2>
+
+<p><img src="/assets/images/raspiMonitor.png" alt="monitor" width="100%" /></p>
+
+<p>So you’ve got your sensors all logging to InfluxDB and displaying on Grafana, that’s great! But you want to see what kind of cool magic Grafana is really capable of? Try out <a href="https://grafana.com/grafana/dashboards/10578">this dashboard for Raspberry Pi</a> you can import directly into your Grafana UI.</p>
+
+<p>It works with a program called <a href="https://www.influxdata.com/time-series-platform/telegraf/">telegraf</a>, which automatically collects stats on your server and logs them directly to your InfluxDB database, from where they can be accessed by your new dashboard.</p>
+
+<p>To get the dashboard up and running, you’ll need to install telegraf on your Pi first. For this, I found this great shell script from <a href="https://github.com/atanasyanew">atanasyanew</a>. It worked great for me on my Raspberry Pi 3B. Get this script with wget first:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://gist.githubusercontent.com/atanasyanew/fa4cc748c2b3234a0de20db9b76ed00b/raw/411de9c80b2c70bb88497d67fd83b113710f400a/telegraf-install.sh
+</code></pre></div></div>
+<p>Then make it executable (may need sudo, can’t remember :P):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x telegraf-install.sh
+</code></pre></div></div>
+<p>And run it:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span> telegraf-install.sh
+</code></pre></div></div>
+
+<p>Now we just need to add the telegraf configurations for our InfluxDB server, etc. stated in the homepage of the Grafana Dashboard. I’ve copied them here for simplicity’s sake.</p>
+
+<p>They want you to run this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>usermod <span class="nt">-G</span> video telegraf
+</code></pre></div></div>
+<p>Then edit <code class="language-plaintext highlighter-rouge">/etc/telegraf/telegraf.conf</code> like this:</p>
+
+<div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#In order to monitor both Network interfaces, eth0 and wlan0, uncomment, or add the next:
+</span>[[<span class="n">inputs</span>.<span class="n">net</span>]]
+
+[[<span class="n">inputs</span>.<span class="n">netstat</span>]]
+
+[[<span class="n">inputs</span>.<span class="n">file</span>]]
+  <span class="n">files</span> = [<span class="s2">"/sys/class/thermal/thermal_zone0/temp"</span>]
+  <span class="n">name_override</span> = <span class="s2">"cpu_temperature"</span>
+  <span class="n">data_format</span> = <span class="s2">"value"</span>
+  <span class="n">data_type</span> = <span class="s2">"integer"</span>
+
+[[<span class="n">inputs</span>.<span class="n">exec</span>]]
+  <span class="n">commands</span> = [<span class="s2">"/opt/vc/bin/vcgencmd measure_temp"</span>]
+  <span class="n">name_override</span> = <span class="s2">"gpu_temperature"</span>
+  <span class="n">data_format</span> = <span class="s2">"grok"</span>
+  <span class="n">grok_patterns</span> = [<span class="s2">"%{NUMBER:value:float}"</span>]
+</code></pre></div></div>
+
+<p>The above was recommended by the creator. But I also added my credentials to this file (I am on a local network, so I don’t see a big security risk here):</p>
+
+<div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[<span class="n">outputs</span>.<span class="n">influxdb</span>]]
+  <span class="c">## The full HTTP or UDP URL for your InfluxDB instance.
+</span>  <span class="c">##
+</span>  <span class="c">## Multiple URLs can be specified for a single cluster, only ONE of the
+</span>  <span class="c">## urls will be written to each interval.
+</span>  <span class="c"># urls = ["unix:///var/run/influxdb.sock"]
+</span>  <span class="c"># urls = ["udp://127.0.0.1:8089"]
+</span>  <span class="n">urls</span> = [<span class="s2">"http://127.0.0.1:8086"</span>]
+
+  <span class="c">## The target database for metrics; will be created as needed.
+</span>  <span class="c">## For UDP url endpoint database needs to be configured on server side.
+</span>  <span class="n">database</span> = <span class="s2">"home"</span>
+...
+ <span class="c">## HTTP Basic Auth
+</span><span class="n">username</span> = <span class="s2">"grafana"</span>
+<span class="n">password</span> = <span class="s2">"blubblub"</span>
+
+</code></pre></div></div>
+
+<p>Once you’ve done this, do a <code class="language-plaintext highlighter-rouge">sudo reboot</code> to seal the deal. When you’re back online, your system will already be logging its stats to InfluxDB.</p>
+
+<h2 id="last-but-not-least">Last but not least</h2>
+
+<p>The final step here is to import the dashboard into our Grafana. There is an easy import function for this. Go to <code class="language-plaintext highlighter-rouge">Manage Dashboards</code> and click the <code class="language-plaintext highlighter-rouge">Import</code> button on the right side. It will bring you to this screen where you can just type in the dashboard id number from the website (it’s <code class="language-plaintext highlighter-rouge">10578</code>):</p>
+
+<p><img src="/assets/images/importdash.png" alt="importdash" width="50%" /></p>
+
+<p>You did it! Now, navigate to your new dashboard, and gaze in awe at your new Raspberry metrics…</p>
+
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

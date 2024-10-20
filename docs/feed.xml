@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-20T10:06:26+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Brian Junker-Latocha</title><subtitle>M.A. Computational Linguist &amp; Jack-of-all-trades
+</subtitle><author><name>Brian Junker-Latocha</name></author><entry><title type="html">Code Your Flow: Write the Logic, Render the Image</title><link href="http://localhost:4000/flowcharts-graphviz.html" rel="alternate" type="text/html" title="Code Your Flow: Write the Logic, Render the Image" /><published>2022-07-10T00:15:00+02:00</published><updated>2022-07-10T00:15:00+02:00</updated><id>http://localhost:4000/flowcharts_graphviz</id><content type="html" xml:base="http://localhost:4000/flowcharts-graphviz.html">&lt;p&gt;Create elegant flowcharts in Graphviz without worrying about layout.
+&lt;a href=&quot;/assets/flow.dot&quot; download=&quot;flow.dot&quot;&gt;
+  &lt;img src=&quot;/assets/images/flow.png&quot; alt=&quot;flow&quot; width=&quot;100%&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By defining flows as text, you can focus on the logic and let the rendering engine take care of the rest. Plus, you can take full advantage of version control to pinpoint changes and diffs.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://graphviz.org&quot;&gt;Graphviz&lt;/a&gt; framework was &lt;a href=&quot;https://en.wikipedia.org/wiki/Graphviz&quot;&gt;developed by AT&amp;amp;T Labs Research&lt;/a&gt; as an open-source tool package for modeling and representing graphs textually.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.graphviz.org/doc/info/lang.html&quot;&gt;DOT language&lt;/a&gt; is the reasonably intuitive markup language used to define the graphs.&lt;/p&gt;
+
+&lt;h2 id=&quot;flowcharting-in-graphviz&quot;&gt;Flowcharting in Graphviz&lt;/h2&gt;
+&lt;p&gt;The basic concept behind flowcharting in Graphviz is to first define your nodes, and then describe the connections they have between each other.&lt;/p&gt;
+
+&lt;p&gt;By separating the logical aspect of flow writing from the visual aspect, you can focus on the data and avoid the distraction of layout adjustment.&lt;/p&gt;
+
+&lt;h2 id=&quot;define-nodes&quot;&gt;Define nodes&lt;/h2&gt;
+&lt;p&gt;The first part of creating a code-based flow is to define your nodes’ shape, color and contents. Each node is declared on a new line and given a unique name.&lt;/p&gt;
+
+&lt;p&gt;Certain keywords, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node&lt;/code&gt;, are universal keywords, whose styling is applied to all nodes thereafter (until redefined).&lt;/p&gt;
+
+&lt;p&gt;The very first line of the graph denotes that the data below will form a directional graph, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;digraph&lt;/code&gt;, and is necessary for the renderer to work right. The graph type is followed by a unique name.&lt;/p&gt;
+
+&lt;div class=&quot;language-dot highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;digraph&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tel_flow&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// NODE DEFINITIONS&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// start nodes&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// this definition also includes graph-wide definitions for fill and font&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;filled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fontname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Work Sans Light 300&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// end nodes&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;doublecircle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;doublecircle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// prompt nodes&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lightblue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;prompt_welcome&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Willkommen
+            beim Telefonkontakt der ABC-
+            Krankenkasse! Ein Kundenagent 
+            ist gleich für Sie da.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;prompt_vnr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Bevor ich Sie verbinde,
+            sagen Sie mir bitte Ihre
+            Versichertennummer. Sie beginnt 
+            mit einem Buchstaben, gefolgt
+            von 8 Ziffern&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;prompt_vnr_fail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Das hat leider nicht geklappt. 
+            Probieren wirs nochmal.
+            Sagen Sie mir bitte Ihre
+            Versichertennummer.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;prompt_vnr_success&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Danke! Mit welchem Thema 
+            können wir Sie heute unterstützen?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;prompt_anliegen_success&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Zu Thema XX
+            unterstützt Sie gleich ein Kundenagent.
+            Ich verbinde Sie.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;prompt_connect_agent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ich verbinde Sie mit
+            einem Kundenagenten.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;  
+        &lt;span class=&quot;nv&quot;&gt;prompt_nicht_verstanden_anliegen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ich konnte Sie leider
+            nicht verstehen. Um welchen 
+            Themenkomplex geht es?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// utterance nodes&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;yellowgreen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;utterance_vnr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;VNR-Utterance&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;utterance_anliegen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Anliegen-Utterance&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// nlu nodes&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;invhouse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lightgray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;nlu_vnr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;NLU: Versichertennr.?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;nlu_anliegen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;NLU: Anliegen?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// intent nodes&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;house&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lightgray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;intent_vnr_no_intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;VNR_NO_INTENT&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;intent_vnr_agent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;VNR_AGENT&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;intent_vnr_vnr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;VNR_VNR&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;intent_anliegen_no_intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ANLIEGEN_NO_INTENT&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;intent_anliegen_agent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ANLIEGEN_AGENT&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;intent_anliegen_xx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ANLIEGEN_XX&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;// logic nodes&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;diamond&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lightgray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;  
+        &lt;span class=&quot;nv&quot;&gt;logic_zweitversuch_vnr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Zweitversuch V-Nr?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;logic_zweitversuch_anliegen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Zweitversuch Anliegen?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;define-relationships&quot;&gt;Define Relationships&lt;/h2&gt;
+&lt;p&gt;Next, the predefined nodes need to be connected to eath other with arrows. To make the flow clearer, subgraphs can be used to cluster nodes that belong to the same task or component.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&amp;gt;&lt;/code&gt; arrow represents the direction of the connnection between the node names before and after it. Just like with the nodes, the connections can also have labels, defineable in brackets.&lt;/p&gt;
+
+&lt;p&gt;The subgraphs represent the big blue boxes in the image, and can also be styled with different colors, rounding, labels, etc. These are the values followed by equals signs. Pro tip: Subgraph names must start with “cluster”.&lt;/p&gt;
+
+&lt;div class=&quot;language-dot highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;// SUBGRAPH AND CONNECTION DEFINITIONS&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;subgraph&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cluster_welcome&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Willkommen&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;blue&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_welcome&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;subgraph&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cluster_vnr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Versichertennummer verstehen&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;blue&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;prompt_welcome&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_vnr&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;utterance_vnr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nlu_vnr&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;nlu_vnr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;intent_vnr_agent&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;nlu_vnr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;intent_vnr_vnr&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;nlu_vnr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;intent_vnr_no_intent&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;intent_vnr_no_intent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;logic_zweitversuch_vnr&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;prompt_vnr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;utterance_vnr&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;logic_zweitversuch_vnr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_vnr_fail&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;nein&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;prompt_vnr_fail&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;utterance_vnr&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    
+
+&lt;span class=&quot;k&quot;&gt;subgraph&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cluster_anliegen&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Anliegen verstehen&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;blue&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;prompt_vnr_success&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;utterance_anliegen&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;utterance_anliegen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nlu_anliegen&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;nlu_anliegen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;intent_anliegen_xx&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;nlu_anliegen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;intent_anliegen_agent&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;nlu_anliegen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;intent_anliegen_no_intent&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;intent_anliegen_no_intent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;logic_zweitversuch_anliegen&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;logic_zweitversuch_anliegen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_nicht_verstanden_anliegen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;nein&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;prompt_nicht_verstanden_anliegen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;utterance_anliegen&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;intent_vnr_vnr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_vnr_success&lt;/span&gt;
+
+
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;subgraph&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cluster_to_agent&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Übergang zum Agenten&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;blue&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;logic_zweitversuch_vnr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_connect_agent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ja&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;logic_zweitversuch_anliegen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_connect_agent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ja&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;intent_vnr_agent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_connect_agent&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;intent_anliegen_agent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_connect_agent&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;intent_anliegen_xx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;prompt_anliegen_success&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;prompt_anliegen_success&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;prompt_connect_agent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;end&lt;/span&gt;
+
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Using subgraphs causes subgraphs to be layouted individually. Here is the above example as one single graph:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/flow_nosubs.dot&quot; download=&quot;flow_noubs.dot&quot;&gt;
+  &lt;img src=&quot;/assets/images/flow_nosubs.png&quot; alt=&quot;flow_nosubs&quot; width=&quot;100%&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;arterial-flow-charts&quot;&gt;Arterial Flow Charts&lt;/h2&gt;
+&lt;p&gt;Plotting a chart of all the possible tips and turns of the flow paths is well and good. But if you’re trying to make business decisions about the user journeys most central to your business goals, what information does the standard flow chart offer to support?
+&lt;img align=&quot;right&quot; src=&quot;/assets/images/human_body.png&quot; alt=&quot;vascular_system&quot; width=&quot;25%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagine trying to understand the human vascular system without an indication of how big each blood vessel is: you would have no idea about how much traffic is going through the various pipelines, and they all would appear equally important.&lt;/p&gt;
+
+&lt;p&gt;But they’re not.&lt;/p&gt;
+
+&lt;p&gt;So help business deciders prioritize user journeys by telling them which flow paths are the most important– visually.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/flow_arterial.dot&quot; download=&quot;flow_arterial.dot&quot;&gt;
+  &lt;img src=&quot;/assets/images/arterieContrast.png&quot; alt=&quot;flow_arterial&quot; width=&quot;100%&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Click the above image to download the example arterial flow, or just use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edge[penwidth=1]&lt;/code&gt; label above the edges you want to make thicker or thinner.&lt;/p&gt;
+&lt;h2 id=&quot;rendering-the-image&quot;&gt;Rendering the Image&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VScode&lt;/a&gt;, with the &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=EFanZh.graphviz-preview&quot;&gt;Graphviz Preview&lt;/a&gt; extension, is a great tool for creating Graphviz graphs that allows you to render in a parallel window as you type.&lt;/p&gt;
+
+&lt;p&gt;But if you want to try out Graphviz without installing anything, just go to the online Graphviz editor, &lt;a href=&quot;https://dreampuf.github.io/GraphvizOnline/#digraph%20tel_flow%20%7B%0A%20%20%20%20%2F%2F%20define%20font%20for%20subgraph%20headings%0A%20%20%20%20graph%5Bfontname%3D%22Trebuchet%20MS%22%5D%0A%2F%2F%20NODE%20DEFINITIONS%0A%20%20%20%20%2F%2F%20start%20nodes%0A%20%20%20%20%2F%2F%20this%20definition%20also%20includes%20graph-wide%20definitions%20for%20filling%20and%20font%0A%20%20%20%20node%5Bstyle%3Dfilled%2Cshape%3Dcircle%2Ccolor%3Dblack%2Cfontname%3D%22Trebuchet%20MS%22%5D%0A%20%20%20%20%20%20%20%20start%5Bshape%3Dcircle%2Ccolor%3Dblack%5D%0A%0A%20%20%20%20%2F%2F%20end%20nodes%0A%20%20%20%20node%5Bstyle%3Dfilled%2Cshape%3Ddoublecircle%2Ccolor%3Dblack%5D%0A%20%20%20%20%20%20%20%20end%5Bshape%3Ddoublecircle%2Ccolor%3Dblack%5D%0A%0A%20%20%20%20%2F%2F%20prompt%20nodes%0A%20%20%20%20node%5Bstyle%3Dfilled%2Cshape%3Dbox%2Ccolor%3Dlightblue%5D%0A%20%20%20%20%20%20%20%20prompt_welcome%5Blabel%3D%22Willkommen%0A%20%20%20%20%20%20%20%20%20%20%20%20beim%20Telefonkontakt%20der%20ABC-%0A%20%20%20%20%20%20%20%20%20%20%20%20Krankenkasse!%20Ein%20Kundenagent%20%0A%20%20%20%20%20%20%20%20%20%20%20%20ist%20gleich%20f%C3%BCr%20Sie%20da.%22%5D%0A%20%20%20%20%20%20%20%20prompt_vnr%5Blabel%3D%22Bevor%20ich%20Sie%20verbinde%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20sagen%20Sie%20mir%20bitte%20Ihre%0A%20%20%20%20%20%20%20%20%20%20%20%20Versichertennummer.%20Sie%20beginnt%20%0A%20%20%20%20%20%20%20%20%20%20%20%20mit%20einem%20Buchstaben%2C%20gefolgt%0A%20%20%20%20%20%20%20%20%20%20%20%20von%208%20Ziffern%22%5D%0A%20%20%20%20%20%20%20%20prompt_vnr_fail%5Blabel%3D%22Das%20hat%20leider%20nicht%20geklappt.%20%0A%20%20%20%20%20%20%20%20%20%20%20%20Probieren%20wirs%20nochmal.%0A%20%20%20%20%20%20%20%20%20%20%20%20Sagen%20Sie%20mir%20bitte%20Ihre%0A%20%20%20%20%20%20%20%20%20%20%20%20Versichertennummer.%22%5D%0A%20%20%20%20%20%20%20%20prompt_vnr_success%5Blabel%3D%22Danke!%20Mit%20welchem%20Thema%20%0A%20%20%20%20%20%20%20%20%20%20%20%20k%C3%B6nnen%20wir%20Sie%20heute%20unterst%C3%BCtzen%3F%22%5D%0A%20%20%20%20%20%20%20%20prompt_anliegen_success%5Blabel%3D%22Zu%20Thema%20XX%0A%20%20%20%20%20%20%20%20%20%20%20%20unterst%C3%BCtzt%20Sie%20gleich%20ein%20Kundenagent.%0A%20%20%20%20%20%20%20%20%20%20%20%20Ich%20verbinde%20Sie.%22%5D%0A%20%20%20%20%20%20%20%20prompt_connect_agent%5Blabel%3D%22Ich%20verbinde%20Sie%20mit%0A%20%20%20%20%20%20%20%20%20%20%20%20einem%20Kundenagenten.%22%5D%20%20%0A%20%20%20%20%20%20%20%20prompt_nicht_verstanden_anliegen%5Blabel%3D%22Ich%20konnte%20Sie%20leider%0A%20%20%20%20%20%20%20%20%20%20%20%20nicht%20verstehen.%20Um%20welchen%20%0A%20%20%20%20%20%20%20%20%20%20%20%20Themenkomplex%20geht%20es%3F%22%5D%0A%0A%20%20%20%20%2F%2F%20utterance%20nodes%0A%20%20%20%20node%5Bstyle%3Dfilled%2Cshape%3Dbox%2Ccolor%3Dyellowgreen%5D%0A%20%20%20%20%20%20%20%20utterance_vnr%5Blabel%3D%22VNR-Utterance%22%5D%0A%20%20%20%20%20%20%20%20utterance_anliegen%5Blabel%3D%22Anliegen-Utterance%22%5D%0A%0A%20%20%20%20%2F%2F%20nlu%20nodes%0A%20%20%20%20node%5Bstyle%3Dfilled%2Cshape%3Dinvhouse%2Ccolor%3Dlightgray%5D%0A%20%20%20%20%20%20%20%20nlu_vnr%5Blabel%3D%22NLU%3A%20Versichertennr.%3F%22%5D%0A%20%20%20%20%20%20%20%20nlu_anliegen%5Blabel%3D%22NLU%3A%20Anliegen%3F%22%5D%0A%0A%20%20%20%20%2F%2F%20intent%20nodes%0A%20%20%20%20node%5Bstyle%3Dfilled%2Cshape%3Dhouse%2Ccolor%3Dlightgray%5D%0A%20%20%20%20%20%20%20%20intent_vnr_no_intent%5Blabel%3D%22VNR_NO_INTENT%22%5D%0A%20%20%20%20%20%20%20%20intent_vnr_agent%5Blabel%3D%22VNR_AGENT%22%5D%0A%20%20%20%20%20%20%20%20intent_vnr_vnr%5Blabel%3D%22VNR_VNR%22%5D%0A%20%20%20%20%20%20%20%20intent_anliegen_no_intent%5Blabel%3D%22ANLIEGEN_NO_INTENT%22%5D%0A%20%20%20%20%20%20%20%20intent_anliegen_agent%5Blabel%3D%22ANLIEGEN_AGENT%22%5D%0A%20%20%20%20%20%20%20%20intent_anliegen_xx%5Blabel%3D%22ANLIEGEN_XX%22%5D%0A%20%20%20%20%0A%20%20%20%20%2F%2F%20logic%20nodes%0A%20%20%20%20node%5Bstyle%3Dfilled%2Cshape%3Ddiamond%2Ccolor%3Dlightgray%5D%20%20%0A%20%20%20%20%20%20%20%20logic_zweitversuch_vnr%5Blabel%3D%22Zweitversuch%20V-Nr%3F%22%5D%0A%20%20%20%20%20%20%20%20logic_zweitversuch_anliegen%5Blabel%3D%22Zweitversuch%20Anliegen%3F%22%5D%0A%0A%2F%2F%20SUBGRAPH%20AND%20CONNECTION%20DEFINITIONS%0A%0Asubgraph%20cluster_welcome%20%7B%0A%20%20%20%20label%20%3D%20%22Willkommen%22%0A%20%20%20%20color%20%3D%20blue%0A%20%20%20%20edge%5Bpenwidth%3D5%5D%0A%20%20%20%20start%20-%3E%20prompt_welcome%0A%0A%7D%0A%0Asubgraph%20cluster_vnr%20%7B%0A%20%20%20%20label%20%3D%20%22Versichertennummer%20verstehen%22%0A%20%20%20%20color%20%3D%20blue%0A%20%20%20%20edge%5Bpenwidth%3D5%5D%0A%20%20%20%20prompt_welcome%20-%3E%20prompt_vnr%0A%20%20%20%20prompt_vnr%20-%3E%20utterance_vnr%0A%20%20%20%20utterance_vnr%20-%3E%20nlu_vnr%0A%20%20%20%20nlu_vnr%20-%3E%20intent_vnr_vnr%0A%20%20%20%20edge%5Bpenwidth%3D2.5%5D%0A%20%20%20%20nlu_vnr%20-%3E%20intent_vnr_agent%0A%20%20%20%20edge%5Bpenwidth%3D1%5D%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20nlu_vnr%20-%3E%20intent_vnr_no_intent%0A%20%20%20%20intent_vnr_no_intent%20-%3E%20logic_zweitversuch_vnr%0A%20%20%20%20logic_zweitversuch_vnr%20-%3E%20prompt_vnr_fail%20%5Blabel%3D%22nein%22%2Cfontname%3D%22Trebuchet%20MS%22%5D%0A%20%20%20%20prompt_vnr_fail%20-%3E%20utterance_vnr%0A%0A%7D%0A%20%20%20%20%0A%0Asubgraph%20cluster_anliegen%20%7B%0A%20%20%20%20label%20%3D%20%22Anliegen%20verstehen%22%0A%20%20%20%20color%20%3D%20blue%0A%20%20%20%20edge%5Bpenwidth%3D5%5D%0A%20%20%20%20intent_vnr_vnr%20-%3E%20prompt_vnr_success%0A%20%20%20%20prompt_vnr_success%20-%3E%20utterance_anliegen%0A%20%20%20%20utterance_anliegen%20-%3E%20nlu_anliegen%0A%20%20%20%20nlu_anliegen%20-%3E%20intent_anliegen_xx%0A%0A%0A%20%20%20%20edge%5Bpenwidth%3D2.5%5D%0A%20%20%20%20nlu_anliegen%20-%3E%20intent_anliegen_agent%0A%0A%20%20%20%20edge%5Bpenwidth%3D1%5D%0A%20%20%20%20nlu_anliegen%20-%3E%20intent_anliegen_no_intent%0A%20%20%20%20intent_anliegen_no_intent%20-%3E%20logic_zweitversuch_anliegen%0A%20%20%20%20logic_zweitversuch_anliegen%20-%3E%20prompt_nicht_verstanden_anliegen%20%5Blabel%3D%22nein%22%2Cfontname%3D%22Trebuchet%20MS%22%5D%0A%20%20%20%20prompt_nicht_verstanden_anliegen%20-%3E%20utterance_anliegen%0A%20%20%20%20%0A%0A%0A%0A%7D%0Asubgraph%20cluster_to_agent%20%7B%0A%20%20%20%20label%20%3D%20%22%C3%9Cbergang%20zum%20Agenten%22%0A%20%20%20%20color%20%3D%20blue%0A%20%20%20%20edge%5Bpenwidth%3D5%5D%0A%20%20%20%20intent_anliegen_xx%20-%3E%20prompt_anliegen_success%0A%20%20%20%20prompt_anliegen_success%20-%3E%20end%0A%20%20%20%20edge%5Bpenwidth%3D2.5%5D%0A%20%20%20%20intent_anliegen_agent%20-%3E%20prompt_connect_agent%0A%20%20%20%20intent_vnr_agent%20-%3E%20prompt_connect_agent%0A%20%20%20%20prompt_connect_agent%20-%3E%20end%0A%20%20%20%20edge%5Bpenwidth%3D1%5D%0A%20%20%20%20logic_zweitversuch_vnr%20-%3E%20prompt_connect_agent%20%5Blabel%3D%22ja%22%2Cfontname%3D%22Trebuchet%20MS%22%5D%0A%20%20%20%20logic_zweitversuch_anliegen%20-%3E%20prompt_connect_agent%20%5Blabel%3D%22ja%22%2Cfontname%3D%22Trebuchet%20MS%22%5D%0A%0A%0A%7D%0A%0A%7D%0A%0A%0A%0A%0A%0A%0A&quot;&gt;dreampuf.github.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to go the VScode route, youll first need to install &lt;a href=&quot;https://graphviz.org/download/&quot;&gt;graphviz&lt;/a&gt; on your system.&lt;/p&gt;
+
+&lt;p&gt;Then, all you need to do is create your graph file with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dot&lt;/code&gt; ending in VScode and then run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Graphviz: Open Preview to the Side&lt;/code&gt;  using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CTRL/CMD-SHIFT-P&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/graphviz_preview.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From this screen, you can export to the file format of your choice.&lt;/p&gt;
+
+&lt;h2 id=&quot;develop-collaboratively-and-easily-inspect-diffs&quot;&gt;Develop Collaboratively and Easily Inspect Diffs&lt;/h2&gt;
+&lt;p&gt;In VScode, you can use git to track versions of your graph as you develop and change it. Additionally, you can use the compare diff functionality to see exactly what part of the graph was changed in each version.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/diff_flow.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Creating flowcharts from code is a great way to focus your thoughts on the raw flow structure itself. But it also takes the visual tidying work off your shoulders, and makes collaboration easier by enabling line-for-line comparability of versions.&lt;/p&gt;</content><author><name>Brian Junker-Latocha</name></author><category term="thinking-aids" /><category term="graphviz" /><category term="conversational-ai" /><category term="flow-graphing" /><summary type="html">Create elegant flowcharts in Graphviz without worrying about layout.</summary></entry><entry><title type="html">Take Your Retro to a Meta Level</title><link href="http://localhost:4000/metacards.html" rel="alternate" type="text/html" title="Take Your Retro to a Meta Level" /><published>2022-05-10T23:01:00+02:00</published><updated>2022-05-10T23:01:00+02:00</updated><id>http://localhost:4000/metacards</id><content type="html" xml:base="http://localhost:4000/metacards.html">&lt;p&gt;&lt;a href=&quot;/assets/metacards.pdf&quot; download=&quot;metacards&quot;&gt;
+  &lt;img src=&quot;/assets/images/metacards.jpeg&quot; alt=&quot;metacards&quot; width=&quot;100%&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meta4 Cards are a team communication and ideation tool. They help you to reflect together on previous work, and identify risks and opportunities in upcoming tasks.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
+&lt;h3 id=&quot;make&quot;&gt;Make&lt;/h3&gt;
+&lt;p&gt;Download the pdf by clicking the above image. Then print on cardstock, or use regular paper and glue to colorful construction paper.&lt;/p&gt;
+
+&lt;h3 id=&quot;reflect&quot;&gt;Reflect&lt;/h3&gt;
+&lt;p&gt;The scrum master draws or chooses a card from the deck to reflect upon, and presents it. Team members write feedback on sticky notes for either the positive metaphor, the negative one, or both. Repeat this step as desired.&lt;/p&gt;
+
+&lt;h3 id=&quot;prioritize&quot;&gt;Prioritize&lt;/h3&gt;
+&lt;p&gt;After recording feedback stickies for each card, each team member selects their top three and puts them on the board.&lt;/p&gt;
+
+&lt;h3 id=&quot;cluster&quot;&gt;Cluster&lt;/h3&gt;
+&lt;p&gt;Once the stickies are on the board, they can be clustered as a team into topics.&lt;/p&gt;
+
+&lt;h3 id=&quot;vote&quot;&gt;Vote&lt;/h3&gt;
+&lt;p&gt;Vote on the clusters to identify the most important action points or experiences to remember for the future.&lt;/p&gt;
+
+&lt;h3 id=&quot;act&quot;&gt;Act&lt;/h3&gt;
+&lt;p&gt;Optimize your workflow by putting the team’s feedback into effect.&lt;/p&gt;
+
+&lt;p&gt;© Brian Junker-Latocha 2022&lt;/p&gt;</content><author><name>Brian Junker-Latocha</name></author><category term="jekyll" /><category term="update" /><category term="organization" /><category term="thinking-aids" /><summary type="html"></summary></entry><entry><title type="html">Process-Graph Your Tasks</title><link href="http://localhost:4000/task-steps-chart.html" rel="alternate" type="text/html" title="Process-Graph Your Tasks" /><published>2022-02-12T08:43:00+01:00</published><updated>2022-02-12T08:43:00+01:00</updated><id>http://localhost:4000/task_steps_chart</id><content type="html" xml:base="http://localhost:4000/task-steps-chart.html">&lt;p&gt;&lt;img src=&quot;/assets/images/task_steps.png&quot; alt=&quot;task_step&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to model the task structure of a given project, it can make sense to list all the different tasks and subtasks, all the recurring processes that project consists of. But how can you best communicate the details of your task network?&lt;/p&gt;
+
+&lt;h2 id=&quot;the-task-process-graph&quot;&gt;The Task-Process Graph&lt;/h2&gt;
+
+&lt;p&gt;For a data structure that can represent interconnected tasks and steps, we need a collection of lists and connecting arrows:&lt;/p&gt;
+
+&lt;p&gt;In the above task-process graph, specific cells, or task steps, of the task nodes are connected in a flow to show what substeps pertain to which tasks, and which substeps are shared by which tasks in a many-to-one relationship.&lt;/p&gt;
+
+&lt;h2 id=&quot;drawing-tools&quot;&gt;Drawing Tools&lt;/h2&gt;
+
+&lt;p&gt;You can generate this data structure using DOT graphs and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;record&lt;/code&gt; node style.
+For example online, with this great website (code to the sample chart included):
+&lt;a href=&quot;https://dreampuf.github.io/GraphvizOnline/#digraph%20tasks_steps%20%7B%0Agraph%20%5B%0A%20%20%20%20labelloc%3D%22t%22%0A%20%20%20%20fontsize%3D30%0A%20%20%20%20label%3D%22Task%20Chart%3A%20Making%20a%20Github%20Pages%20Website%22%0A%20%20%20%20rankdir%20%3D%20%22LR%22%0A%5D%3B%0Anode%20%5B%0Afontsize%20%3D%20%2216%22%20%0A%5D%3B%0Aedge%20%5B%0A%5D%3B%0A%22CREATE%20A%20GITHUB%20PAGES%20WEBSITE%22%20%5B%0Alabel%20%3D%20%22%3Cf0%3E%20CREATE%20GITHUB%20PAGES%20WEBSITE%20%7C%20%3Cf1%3E%201.%20create%20a%20github%20repository%20%7C%20%3Cf2%3E%202.%20buy%20domain%20on%20namecheap%20%7C%0A%3Cf3%3E%203.%20link%20github%20pages%20to%20domain%22%0Ashape%20%3D%20%22record%22%0A%5D%3B%0A%22CREATE%20A%20GITHUB%20REPOSITORY%22%20%5B%0Alabel%20%3D%20%22%3Cf0%3E%20CREATE%20A%20GITHUB%20REPOSITORY%20%7C%20%3Cf1%3E%201.%20create%20a%20github%20account%20%7C%20%3Cf2%3E%202.%20press%20button%20for%20new%20repository%20%7C%20%3Cf3%3E%203.%20create%20local%20repository%20and%20push%22%0Ashape%20%3D%20%22record%22%0A%5D%3B%0A%22LINK%20GITHUB%20PAGES%20TO%20DOMAIN%22%20%5B%0Alabel%20%3D%20%22%3Cf0%3E%20LINK%20GITHUB%20PAGES%20TO%20DOMAIN%20%7C%20%3Cf1%3E%201.%20configure%20domain%20records%20on%20namecheap%20%7C%20%3Cf2%3E%202.%20enter%20domain%20name%20on%20github%20pages%22%0Ashape%20%3D%20%22record%22%0A%5D%3B%0A%0A%22CREATE%20LOCAL%20REPOSITORY%20AND%20PUSH%22%20%5B%0Alabel%20%3D%20%22%3Cf0%3E%20CREATE%20LOCAL%20REPOSITORY%20AND%20PUSH%20%7C%20%3Cf1%3E%201.%20go%20to%20command%20line%20in%20desired%20directory%20%7C%20%3Cf2%3E%202.%20create%20repo%20with%20%60git%20init&apos;%20%7C%20%3Cf3%3E%203.%20add%20readme%20file%20%7C%0A%20%3Cf4%3E%204.%20stage%20changes%20with%20%60git%20add%20.%60%20%7C%20%3Cf5%3E%205.%20commit%20initial%20status%20with%20%60git%20commit%20-m%20&apos;initial%20status&apos;%20%7C%20%3Cf6%3E%206.%20link%20repo%20to%20remote%20with%20%60git%20remote%20add%20origin%60%20%0A%20%7C%20%3Cf7%3E%207.%20push%20to%20remote%20with%20%60git%20push%20-u%20origin%20master%60%22%0Ashape%20%3D%20%22record%22%0A%5D%3B%0A%22CONFIGURE%20DOMAIN%20RECORDS%20ON%20NAMECHEAP%22%20%5B%0Alabel%20%3D%20%22%3Cf0%3E%20CONFIGURE%20DOMAIN%20RECORDS%20ON%20NAMECHEAP%20%7C%20%3Cf1%3E%201.%20login%20to%20namecheap%20dashboard%20%7C%20%3Cf2%3E%202.%20google%20the%20github%20pages%20domain%20settings%20%7C%0A%3Cf3%3E%203.%20add%20records%20to%20DNS%20as%20specified%20%7C%20%3Cf4%3E%204.%20wait%2030%20minutes%22%0Ashape%20%3D%20%22record%22%0A%5D%3B%0A%22ENTER%20DOMAIN%20NAME%20ON%20GITHUB%20PAGES%22%20%5B%0Alabel%20%3D%20%22%3Cf0%3E%20ENTER%20DOMAIN%20NAME%20ON%20GITHUB%20PAGES%20%7C%20%3Cf1%3E%201.%20go%20to%20settings%20of%20github%20repo%20%7C%20%3Cf2%3E%202.%20enter%20domain%20name%20and%20ending%20in%20github%20pages%20tab%20%7C%0A%3Cf3%3E%203.%20check%20box%20for%20&apos;require%20https&apos;%20%7C%20%3Cf4%3E%204.%20save%20changes%22%0Ashape%20%3D%20%22record%22%0A%5D%3B%0A%0A%22CREATE%20A%20GITHUB%20PAGES%20WEBSITE%22%3Af1%20-%3E%20%22CREATE%20A%20GITHUB%20REPOSITORY%22%3Af0%20%5B%0Aid%20%3D%200%0A%5D%3B%0A%0A%22CREATE%20A%20GITHUB%20PAGES%20WEBSITE%22%3Af3%20-%3E%20%22LINK%20GITHUB%20PAGES%20TO%20DOMAIN%22%3Af0%20%5B%0Aid%20%3D%200%0A%5D%3B%0A%22CREATE%20A%20GITHUB%20REPOSITORY%22%3Af3%20-%3E%20%22CREATE%20LOCAL%20REPOSITORY%20AND%20PUSH%22%3Af0%20%5B%0Aid%20%3D%200%0A%5D%3B%0A%22LINK%20GITHUB%20PAGES%20TO%20DOMAIN%22%3Af1%20-%3E%20%22CONFIGURE%20DOMAIN%20RECORDS%20ON%20NAMECHEAP%22%3Af0%20%5B%0Aid%20%3D%200%0A%5D%3B%0A%22LINK%20GITHUB%20PAGES%20TO%20DOMAIN%22%3Af2%20-%3E%20%22ENTER%20DOMAIN%20NAME%20ON%20GITHUB%20PAGES%22%3Af0%20%5B%0Aid%20%3D%200%0A%5D%3B%0A%0A%0A%0A%7D&quot;&gt;dreampuf.github.io/GraphvizOnline&lt;/a&gt;. Alternatively, there is a &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=EFanZh.graphviz-preview&quot;&gt;Graphviz extension available&lt;/a&gt; for the programming environment, VSCode.&lt;/p&gt;
+
+&lt;p&gt;Another option could be to draw and connect the nodes from scratch with the amazing diagramming tool, &lt;a href=&quot;https://app.diagrams.net/&quot;&gt;draw.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And don’t forget pen and paper :grin:&lt;/p&gt;</content><author><name>Brian Junker-Latocha</name></author><category term="jekyll" /><category term="update" /><category term="thinking-aids" /><category term="graphviz" /><summary type="html"></summary></entry><entry><title type="html">X-Ray Your Team with Graphviz</title><link href="http://localhost:4000/contact-task-skeleton.html" rel="alternate" type="text/html" title="X-Ray Your Team with Graphviz" /><published>2022-02-10T21:51:00+01:00</published><updated>2022-02-10T21:51:00+01:00</updated><id>http://localhost:4000/contact_task_skeleton</id><content type="html" xml:base="http://localhost:4000/contact-task-skeleton.html">&lt;p&gt;&lt;img src=&quot;/assets/images/xray.jpg&quot; alt=&quot;hand_skeleton&quot; /&gt;
+A team’s lines of communication make up its organizational backbone for getting tasks done.
+By mapping your contacts to your most important tasks and topics, you can visualize how information flows between you and team members, and better explain to others your role in the project.&lt;/p&gt;
+
+&lt;h2 id=&quot;enter-dot-graph-language-and-graphviz&quot;&gt;Enter DOT Graph Language and Graphviz&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://graphviz.org/doc/info/lang.html&quot;&gt;DOT graph language&lt;/a&gt; and &lt;a href=&quot;https://graphviz.org&quot;&gt;Graphviz&lt;/a&gt; provide a protocol for recording network-structured relationships between elements.&lt;/p&gt;
+
+&lt;p&gt;In its simplest form, DOT provides a framework for connecting nodes, denoted by single words, with edges, denoted by the double dash (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt;). A simple undirected graph could look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-dot highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;graph&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;graph1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;hearing&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+	&lt;span class=&quot;nv&quot;&gt;sight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;taste&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+	&lt;span class=&quot;nv&quot;&gt;taste&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;hearing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+	&lt;span class=&quot;nv&quot;&gt;hearing&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;touch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+	&lt;span class=&quot;nv&quot;&gt;touch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;taste&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/simple_network.png&quot; alt=&quot;simple_network&quot; /&gt;
+&lt;figcaption&gt;a simple network with DOT&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;the-contact-task-graph&quot;&gt;The Contact-Task Graph&lt;/h2&gt;
+
+&lt;p&gt;To go from a simple network graph to a contact-task graph, we need a network plotter that will enable a radial rendering of several (three) layers of nodes, represented in concentric circles. For this, DOT’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;twopi&lt;/code&gt; layout comes in handy.&lt;/p&gt;
+
+&lt;p&gt;Along with some additional node coloring and font settings metadata, the raw data of the contact graph is stored in the below text file. Note that the metadata is set at the beginning, and also includes the specification of the root node. The ring levels of nodes are defined by the separate mappings of the root node to the contact-person nodes, as well as the contact-person nodes to the task nodes. For clarity, the edge lines are shown in alternating rainbow colors. Don’t worry about the numbers with hashtags, those are just a notation for a more exact color.&lt;/p&gt;
+
+&lt;p&gt;Also, if your nodes get too close together because you have so many, try adjusting the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ranksep&lt;/code&gt; value higher.&lt;/p&gt;
+
+&lt;div class=&quot;language-dot highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;graph&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;contacts_tasks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;fontname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Arial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;twopi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+	&lt;span class=&quot;k&quot;&gt;graph&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ranksep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;overlap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Brian&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#000000&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fontname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Bahnschrift&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#c96463&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Brian&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#d9c762&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Adam&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Brad&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Chris&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Donald&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Edward&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Frank&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Gina&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Haley&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Ida&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Jennifer&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;Kyle&lt;/span&gt;
+
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#d9c762&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Adam&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;folk_music&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;tech&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;writing&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;linguistics&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;public_speaking&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;retro_computing&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;conversational_ai&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;jamulus&lt;/span&gt;
+				
+
+
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;orange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Brad&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;folk_music&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;raspberrypi&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;guitar&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;jamulus&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;linguistics&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;public_speaking&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;green&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Chris&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;writing&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;linguistics&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Donald&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;tech&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;nodered&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;purple&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Edward&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;nodered&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;tech&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Frank&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;raspberrypi&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;arduino&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;conversational_ai&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;orange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Gina&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;arduino&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;jamulus&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;green&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Haley&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;folk_music&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;nodered&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;politics&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Ida&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;folk_music&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;banjo&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;purple&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Jennifer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;arduino&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;politics&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;banjo&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;folk_music&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;conversational_ai&lt;/span&gt;
+
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;edge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;nv&quot;&gt;Kyle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;filled&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;penwidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fillcolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#dbd8c8&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;politics&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;
+		&lt;span class=&quot;nv&quot;&gt;conversational_ai&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The final product can be used to map both team members to the tasks you collaborate on, and tasks to the team members involved:&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/contact_skeleton.png&quot; alt=&quot;contact_skel&quot; /&gt;
+&lt;figcaption&gt;Brian&apos;s contact-task graph&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;wait-a-minute-how-did-you-go-from-file-to-image&quot;&gt;Wait a minute, how did you go from file to image?&lt;/h2&gt;
+
+&lt;p&gt;You can generate DOT graphs online with this great website:
+&lt;a href=&quot;https://dreampuf.github.io/GraphvizOnline/#graph%20contacts_tasks%20%7B%0A%09fontname%3DArial%3B%0A%09layout%3Dtwopi%3B%20%0A%09graph%20%5Branksep%3D3%5D%20%5Boverlap%3Dtrue%5D%5Broot%3DBrian%5D%3B%0A%09edge%20%5Bpenwidth%3D1%20color%3D%22%23000000%22%5D%0A%09node%20%5Bfontname%3DBahnschrift%5D%0A%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D15%20penwidth%3D0%20fillcolor%3D%22%23c96463%22%5D%0A%09Brian%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23d9c762%22%5D%0A%09%09Adam%0A%09%09Brad%0A%09%09Chris%0A%09%09Donald%0A%09%09Edward%0A%09%09Frank%0A%09%09Gina%0A%09%09Haley%0A%09%09Ida%0A%09%09Jennifer%0A%09%09Kyle%0A%0A%09%7D%0A%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2015%20penwidth%3D0%20fillcolor%3D%22%23d9c762%22%5D%0A%09edge%20%5Bcolor%3Dred%5D%0A%09Adam%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09folk_music%0A%09%09tech%0A%09%09writing%0A%09%09linguistics%0A%09%09public_speaking%0A%09%09retro_computing%0A%09%09conversational_ai%0A%09%09jamulus%0A%09%09%09%09%0A%0A%0A%09%7D%0A%09edge%20%5Bcolor%3Dorange%5D%0A%09Brad%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09folk_music%0A%09%09raspberrypi%0A%09%09guitar%0A%09%09jamulus%0A%09%09linguistics%0A%09%09public_speaking%0A%09%7D%0A%09edge%20%5Bcolor%3Dgreen%5D%0A%09Chris%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09writing%0A%09%09linguistics%0A%09%7D%0A%09edge%20%5Bcolor%3Dblue%5D%0A%09Donald%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09tech%0A%09%09python%0A%09%09nodered%0A%09%7D%0A%09edge%20%5Bcolor%3Dpurple%5D%0A%09Edward--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09nodered%0A%09%09tech%0A%09%7D%0A%09edge%20%5Bcolor%3Dred%5D%0A%09Frank%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09raspberrypi%0A%09%09arduino%0A%09%09conversational_ai%0A%09%7D%0A%09edge%20%5Bcolor%3Dorange%5D%0A%09Gina%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09arduino%0A%09%09python%0A%09%09jamulus%0A%09%7D%0A%09edge%20%5Bcolor%3Dgreen%5D%0A%09Haley%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09folk_music%0A%09%09python%0A%09%09nodered%0A%09%09politics%0A%09%7D%0A%09edge%20%5Bcolor%3Dblue%5D%0A%09Ida%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09folk_music%0A%09%09banjo%0A%09%7D%0A%09edge%20%5Bcolor%3Dpurple%5D%0A%09Jennifer%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09arduino%0A%09%09politics%0A%09%09banjo%0A%09%09folk_music%0A%09%09conversational_ai%0A%0A%09%7D%0A%09edge%20%5Bcolor%3Dred%5D%0A%09Kyle%20--%20%7B%0A%09%09node%20%5Bstyle%3D%22filled%22%20fontsize%3D%2010%20penwidth%3D0%20fillcolor%3D%22%23dbd8c8%22%5D%0A%09%09politics%0A%09%09python%0A%09%09conversational_ai%0A%09%7D%0A%09%0A%7D&quot;&gt;dreampuf.github.io/GraphvizOnline&lt;/a&gt;:&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/graphvizonline.png&quot; alt=&quot;graphvizdreampuf&quot; /&gt;
+&lt;figcaption&gt;Copy and paste your file on the left and see it generated on the right.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Alternatively, there is a &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=EFanZh.graphviz-preview&quot;&gt;great extension available&lt;/a&gt; for the programming environment, VSCode.&lt;/p&gt;</content><author><name>Brian Junker-Latocha</name></author><category term="jekyll" /><category term="update" /><category term="thinking-aids" /><category term="graphviz" /><summary type="html">A team’s lines of communication make up its organizational backbone for getting tasks done. By mapping your contacts to your most important tasks and topics, you can visualize how information flows between you and team members, and better explain to others your role in the project.</summary></entry><entry><title type="html">Power-Charge Your Node-Red Data with Grafana and InfluxDB</title><link href="http://localhost:4000/grafana-and-nodered.html" rel="alternate" type="text/html" title="Power-Charge Your Node-Red Data with Grafana and InfluxDB" /><published>2020-10-20T21:37:00+02:00</published><updated>2020-10-20T21:37:00+02:00</updated><id>http://localhost:4000/Grafana-and-Nodered</id><content type="html" xml:base="http://localhost:4000/grafana-and-nodered.html">&lt;h2 id=&quot;you-should-be-saving-to-influxdb&quot;&gt;You should be saving to InfluxDB&lt;/h2&gt;
+
+&lt;p&gt;You’re saving sensor readings from Node-Red to text files? There is a more efficient and simple way to do it. &lt;a href=&quot;https://www.influxdata.com/&quot;&gt;InfluxDB&lt;/a&gt; is an open-source database made especially for time-series data like sensor readings. And the great thing is, you can write to it directly from a Node-Red node.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/mqttFlow.png&quot; alt=&quot;Node-Red_flow&quot; width=&quot;75%&quot; /&gt;
+&lt;figcaption&gt;This flow writes incoming MQTT data directly to InfluxDB&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;It’s as easy as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt;ing into your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.node-red&lt;/code&gt; directory and installing the InfluxDB Node-Red package:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;node-red-contrib-influxdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once InfluxDB nodes appear in your node selector panel, just link them up to your desired output and configure.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/influxDBnode.png&quot; alt=&quot;influx_node&quot; width=&quot;50%&quot; /&gt;
+&lt;figcaption&gt;Configuring the InfluxDB Node-Red node&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Of course, you’ll need to have installed InfluxDB on your server first! To do that, check out this &lt;a href=&quot;https://simonhearne.com/2020/pi-influx-grafana/&quot;&gt;great tutorial&lt;/a&gt; by &lt;a href=&quot;https://github.com/simonhearne&quot;&gt;Simon Hearne&lt;/a&gt;. It’s a nice step-by-step, and when you’re done you will also have installed &lt;a href=&quot;https://grafana.com/&quot;&gt;Grafana&lt;/a&gt;, which means you’ll be ready to start inspecting your DB data, too!&lt;/p&gt;
+
+&lt;h2 id=&quot;grafana&quot;&gt;Grafana&lt;/h2&gt;
+
+&lt;p&gt;As soon as you’ve configured the InfluxDB credentials and DB name in Node-Red (providing your flow has received any data, in my case via the MQTT-in node), you will be able to access these so-called InfluxDB measurements in the Grafana panel setup page. Remember, first add the datasource to Grafana like this, under the datasources tab:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/addDatasource.png&quot; alt=&quot;add_datasource&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then go to your Grafana dashboard, add a new panel, and select your measurement from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;select measurement&lt;/code&gt; dropdown field, which autopopulates from InfluxDB if there’s data in it:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/load_influx_measurement.png&quot; alt=&quot;measurement&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As soon as you click somewhere else on the screen the datapoints will appear on the chart! If you don’t like the dots and prefer a continuous line just choose the setting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Stacking and null value&lt;/code&gt; -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Null value&lt;/code&gt; -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;connected&lt;/code&gt; here:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/connectedGRafana.png&quot; alt=&quot;connected&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And if you want multiple lines on one graph, just press the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+ Query&lt;/code&gt; button to add a new query:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/plusQuery.png&quot; alt=&quot;plusquery&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have a few panels configured, it may start to look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/grafanaDash.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And that is how you set up InfluxDB and Grafana with Node-Red. But there’s more…&lt;/p&gt;
+
+&lt;h2 id=&quot;pimp-out-grafana-with-raspberry-pi-metrics&quot;&gt;Pimp out Grafana with Raspberry Pi metrics!&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/raspiMonitor.png&quot; alt=&quot;monitor&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So you’ve got your sensors all logging to InfluxDB and displaying on Grafana, that’s great! But you want to see what kind of cool magic Grafana is really capable of? Try out &lt;a href=&quot;https://grafana.com/grafana/dashboards/10578&quot;&gt;this dashboard for Raspberry Pi&lt;/a&gt; you can import directly into your Grafana UI.&lt;/p&gt;
+
+&lt;p&gt;It works with a program called &lt;a href=&quot;https://www.influxdata.com/time-series-platform/telegraf/&quot;&gt;telegraf&lt;/a&gt;, which automatically collects stats on your server and logs them directly to your InfluxDB database, from where they can be accessed by your new dashboard.&lt;/p&gt;
+
+&lt;p&gt;To get the dashboard up and running, you’ll need to install telegraf on your Pi first. For this, I found this great shell script from &lt;a href=&quot;https://github.com/atanasyanew&quot;&gt;atanasyanew&lt;/a&gt;. It worked great for me on my Raspberry Pi 3B. Get this script with wget first:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://gist.githubusercontent.com/atanasyanew/fa4cc748c2b3234a0de20db9b76ed00b/raw/411de9c80b2c70bb88497d67fd83b113710f400a/telegraf-install.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then make it executable (may need sudo, can’t remember :P):&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; +x telegraf-install.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;And run it:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; telegraf-install.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we just need to add the telegraf configurations for our InfluxDB server, etc. stated in the homepage of the Grafana Dashboard. I’ve copied them here for simplicity’s sake.&lt;/p&gt;
+
+&lt;p&gt;They want you to run this:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;usermod &lt;span class=&quot;nt&quot;&gt;-G&lt;/span&gt; video telegraf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/telegraf/telegraf.conf&lt;/code&gt; like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#In order to monitor both Network interfaces, eth0 and wlan0, uncomment, or add the next:
+&lt;/span&gt;[[&lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;net&lt;/span&gt;]]
+
+[[&lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;netstat&lt;/span&gt;]]
+
+[[&lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;]]
+  &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt; = [&lt;span class=&quot;s2&quot;&gt;&quot;/sys/class/thermal/thermal_zone0/temp&quot;&lt;/span&gt;]
+  &lt;span class=&quot;n&quot;&gt;name_override&lt;/span&gt; = &lt;span class=&quot;s2&quot;&gt;&quot;cpu_temperature&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;data_format&lt;/span&gt; = &lt;span class=&quot;s2&quot;&gt;&quot;value&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;data_type&lt;/span&gt; = &lt;span class=&quot;s2&quot;&gt;&quot;integer&quot;&lt;/span&gt;
+
+[[&lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;exec&lt;/span&gt;]]
+  &lt;span class=&quot;n&quot;&gt;commands&lt;/span&gt; = [&lt;span class=&quot;s2&quot;&gt;&quot;/opt/vc/bin/vcgencmd measure_temp&quot;&lt;/span&gt;]
+  &lt;span class=&quot;n&quot;&gt;name_override&lt;/span&gt; = &lt;span class=&quot;s2&quot;&gt;&quot;gpu_temperature&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;data_format&lt;/span&gt; = &lt;span class=&quot;s2&quot;&gt;&quot;grok&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;grok_patterns&lt;/span&gt; = [&lt;span class=&quot;s2&quot;&gt;&quot;%{NUMBER:value:float}&quot;&lt;/span&gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The above was recommended by the creator. But I also added my credentials to this file (I am on a local network, so I don’t see a big security risk here):&lt;/p&gt;
+
+&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[&lt;span class=&quot;n&quot;&gt;outputs&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;influxdb&lt;/span&gt;]]
+  &lt;span class=&quot;c&quot;&gt;## The full HTTP or UDP URL for your InfluxDB instance.
+&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;##
+&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;## Multiple URLs can be specified for a single cluster, only ONE of the
+&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;## urls will be written to each interval.
+&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# urls = [&quot;unix:///var/run/influxdb.sock&quot;]
+&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# urls = [&quot;udp://127.0.0.1:8089&quot;]
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;urls&lt;/span&gt; = [&lt;span class=&quot;s2&quot;&gt;&quot;http://127.0.0.1:8086&quot;&lt;/span&gt;]
+
+  &lt;span class=&quot;c&quot;&gt;## The target database for metrics; will be created as needed.
+&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;## For UDP url endpoint database needs to be configured on server side.
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;database&lt;/span&gt; = &lt;span class=&quot;s2&quot;&gt;&quot;home&quot;&lt;/span&gt;
+...
+ &lt;span class=&quot;c&quot;&gt;## HTTP Basic Auth
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;username&lt;/span&gt; = &lt;span class=&quot;s2&quot;&gt;&quot;grafana&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;password&lt;/span&gt; = &lt;span class=&quot;s2&quot;&gt;&quot;blubblub&quot;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once you’ve done this, do a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo reboot&lt;/code&gt; to seal the deal. When you’re back online, your system will already be logging its stats to InfluxDB.&lt;/p&gt;
+
+&lt;h2 id=&quot;last-but-not-least&quot;&gt;Last but not least&lt;/h2&gt;
+
+&lt;p&gt;The final step here is to import the dashboard into our Grafana. There is an easy import function for this. Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Manage Dashboards&lt;/code&gt; and click the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import&lt;/code&gt; button on the right side. It will bring you to this screen where you can just type in the dashboard id number from the website (it’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;10578&lt;/code&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/importdash.png&quot; alt=&quot;importdash&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You did it! Now, navigate to your new dashboard, and gaze in awe at your new Raspberry metrics…&lt;/p&gt;</content><author><name>Brian Junker-Latocha</name></author><category term="jekyll" /><category term="update" /><category term="raspberrypi" /><category term="grafana" /><category term="nodered" /><category term="influxdb" /><summary type="html">You should be saving to InfluxDB</summary></entry><entry><title type="html">Post Example With Headings And Toc</title><link href="http://localhost:4000/post-example-with-headings-and-toc.html" rel="alternate" type="text/html" title="Post Example With Headings And Toc" /><published>2020-07-09T00:00:00+02:00</published><updated>2020-07-09T00:00:00+02:00</updated><id>http://localhost:4000/post-example-with-headings-and-toc</id><content type="html" xml:base="http://localhost:4000/post-example-with-headings-and-toc.html">&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo.&lt;/p&gt;
+
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#table-of-contents&quot;&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-start&quot;&gt;The start&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-middle&quot;&gt;The middle&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-end&quot;&gt;The end&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo. Vestibulum porta tincidunt tellus, vitae ornare tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nunc neque, tempor in iaculis non, faucibus et metus. Etiam id nisl ut lorem gravida euismod.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-start&quot;&gt;&lt;a href=&quot;#the-start&quot;&gt;The start&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Fusce non velit cursus ligula mattis convallis vel at metus. Sed pharetra tellus massa, non elementum eros vulputate non. Suspendisse potenti. Quisque arcu felis, laoreet vel accumsan sit amet, fermentum at nunc. Sed massa quam, auctor in eros quis, porttitor tincidunt orci. Nulla convallis id sapien ornare viverra. Cras nec est lacinia ligula porta tincidunt. Nam a est eget ligula pellentesque posuere. Maecenas quis enim ac risus accumsan scelerisque. Aliquam vitae libero sapien. Etiam convallis, metus nec suscipit condimentum, quam massa congue velit, sit amet sollicitudin nisi tortor a lectus. Cras a arcu enim. Suspendisse hendrerit euismod est ac gravida. Donec vitae elit tristique, suscipit eros at, aliquam augue. In ac faucibus dui. Sed tempor lacus tristique elit sagittis, vitae tempor massa convallis.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-middle&quot;&gt;&lt;a href=&quot;#the-middle&quot;&gt;The middle&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Proin quis velit et eros auctor laoreet. Aenean eget nibh odio. Suspendisse mollis enim pretium, fermentum urna vitae, egestas purus. Donec convallis tincidunt purus, scelerisque fermentum eros sagittis vel. Aliquam ac aliquet risus, tempus iaculis est. Fusce molestie mauris non interdum hendrerit. Curabitur ullamcorper, eros vitae interdum volutpat, lacus magna lacinia turpis, at accumsan dui tortor vel lectus. Aenean risus massa, semper non lectus rutrum, facilisis imperdiet mi. Praesent sed quam quis purus auctor ornare et sed augue. Vestibulum non quam quis ligula luctus placerat sed sit amet erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce auctor, sem eu volutpat dignissim, turpis nibh malesuada arcu, in consequat elit mauris quis sem. Nam tristique sit amet enim vel accumsan. Sed id nibh commodo, dictum sem id, semper quam.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-end&quot;&gt;The end&lt;/h2&gt;
+
+&lt;p&gt;Donec ex lectus, tempus non lacinia quis, pretium non ipsum. Praesent est nunc, rutrum vel tellus eu, tristique laoreet purus. In rutrum orci sit amet ex ornare, sit amet finibus lacus laoreet. Etiam ac facilisis purus, eget porttitor odio. Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus. Vivamus at purus sed urna sollicitudin mattis. Mauris lacinia libero in lobortis pulvinar. Nullam sit amet condimentum justo. Donec orci justo, pharetra ut dolor non, interdum finibus orci. Proin vitae ante a dui sodales commodo ac id elit. Nunc vel accumsan nunc, sit amet congue nunc. Aliquam in lacinia velit. Integer lobortis luctus eros, in fermentum metus aliquet a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.&lt;/p&gt;</content><author><name>Brian Junker-Latocha</name></author><category term="example2" /><summary type="html">Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo.</summary></entry><entry><title type="html">Post Example With Hr</title><link href="http://localhost:4000/hr-example.html" rel="alternate" type="text/html" title="Post Example With Hr" /><published>2020-07-09T00:00:00+02:00</published><updated>2020-07-09T00:00:00+02:00</updated><id>http://localhost:4000/hr%20example</id><content type="html" xml:base="http://localhost:4000/hr-example.html">&lt;p&gt;Lorem ipsum&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis. Sed consectetur, nisl et semper laoreet, velit augue congue nunc, eget eleifend odio erat eu sapien. Phasellus dictum efficitur dapibus. Morbi porta lacinia tincidunt. Nam aliquet est mi, nec lacinia ipsum elementum sed. Nam feugiat ipsum tortor, et pretium purus sollicitudin et.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Mauris viverra dictum ultricies&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. Vestibulum&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo. Vestibulum porta tincidunt tellus, vitae ornare tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nunc neque, tempor in iaculis non, faucibus et metus. Etiam id nisl ut lorem gravida euismod.&lt;/p&gt;
+
+&lt;p&gt;Fusce non velit cursus ligula mattis convallis vel at metus. Sed pharetra tellus massa, non elementum eros vulputate non. Suspendisse potenti. Quisque arcu felis, laoreet vel accumsan sit amet, fermentum at nunc. Sed massa quam, auctor in eros quis, porttitor tincidunt orci. Nulla convallis id sapien ornare viverra. Cras nec est lacinia ligula porta tincidunt. Nam a est eget ligula pellentesque posuere. Maecenas quis enim ac risus accumsan scelerisque. Aliquam vitae libero sapien. Etiam convallis, metus nec suscipit condimentum, quam massa congue velit, sit amet sollicitudin nisi tortor a lectus. Cras a arcu enim. Suspendisse hendrerit euismod est ac gravida. Donec vitae elit tristique, suscipit eros at, aliquam augue. In ac faucibus dui. Sed tempor lacus tristique elit sagittis, vitae tempor massa convallis.&lt;/p&gt;
+
+&lt;hr data-content=&quot;discussions&quot; /&gt;
+
+&lt;p&gt;This article has been discussed here:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;lobste.rs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;/r/webdev&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Feel free to reach out at my email to leave feedback and talk about the article.&lt;/p&gt;
+
+&lt;hr data-content=&quot;footnotes&quot; /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Okay here I should put something about “ipsum”. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;same goes for this. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I studied latin in high school but im not able to translate &lt;em&gt;anything&lt;/em&gt;! By the way this is a longer footnote and i think it is still pretty cool, even prettier than shortier ones even though it does not say anything useful but whatever. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Brian Junker-Latocha</name></author><summary type="html">Lorem ipsum1 dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis. Sed consectetur, nisl et semper laoreet, velit augue congue nunc, eget eleifend odio erat eu sapien. Phasellus dictum efficitur dapibus. Morbi porta lacinia tincidunt. Nam aliquet est mi, nec lacinia ipsum elementum sed. Nam feugiat ipsum tortor, et pretium purus sollicitudin et. Okay here I should put something about “ipsum”. &amp;#8617;</summary></entry><entry><title type="html">Very Very Very Long Title And Very Very Very Short Content</title><link href="http://localhost:4000/very-very-very-long-title-and-very-very-very-short-content.html" rel="alternate" type="text/html" title="Very Very Very Long Title And Very Very Very Short Content" /><published>2020-07-08T00:00:00+02:00</published><updated>2020-07-08T00:00:00+02:00</updated><id>http://localhost:4000/very-very-very-long-title-and-very-very-very-short-content</id><content type="html" xml:base="http://localhost:4000/very-very-very-long-title-and-very-very-very-short-content.html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.&lt;/p&gt;</content><author><name>Brian Junker-Latocha</name></author><category term="example" /><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.</summary></entry><entry><title type="html">Language Tests</title><link href="http://localhost:4000/language-tests.html" rel="alternate" type="text/html" title="Language Tests" /><published>2020-07-08T00:00:00+02:00</published><updated>2020-07-08T00:00:00+02:00</updated><id>http://localhost:4000/language-tests</id><content type="html" xml:base="http://localhost:4000/language-tests.html">&lt;p&gt;Note: I took this test post from &lt;a href=&quot;https://github.com/huangyz0918/moving&quot;&gt;moving&lt;/a&gt;, which is another Jekyll theme which is better that this one so I should not have linked it because now you will decide to use it instead of mine.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-日本語テスト&quot;&gt;1. 日本語テスト&lt;/h3&gt;
+
+&lt;p&gt;This is a Japanese test post to show you how japanese is displayed.&lt;/p&gt;
+
+&lt;p&gt;私は昨日ついにその助力家というのの上よりするたなけれ。
+最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。
+がたを知っないはずも同時に九月をいよいよたありた。&lt;/p&gt;
+
+&lt;p&gt;もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&quot;http://lipsum.sugutsukaeru.jp/index.cgi&quot;&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-繁体中文测试&quot;&gt;2. 繁体中文测试&lt;/h3&gt;
+
+&lt;p&gt;This is a chinese test post to show you how chinese is displayed.&lt;/p&gt;
+
+&lt;p&gt;善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。&lt;/p&gt;
+
+&lt;p&gt;以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？&lt;/p&gt;
+
+&lt;p&gt;就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國備當來際年每小腳識世可的的外的廣下歌洲保輪市果底天影；全氣具些回童但倒影發狀在示，數上學大法很，如要我……月品大供這起服滿老？應學傳者國：山式排只不之然清同關；細車是！停屋常間又，資畫領生，相們制在？公別的人寫教資夠。資再我我！只臉夫藝量不路政吃息緊回力之；兒足灣電空時局我怎初安。意今一子區首者微陸現際安除發連由子由而走學體區園我車當會，經時取頭，嚴了新科同？很夫營動通打，出和導一樂，查旅他。坐是收外子發物北看蘭戰坐車身做可來。道就學務。&lt;/p&gt;
+
+&lt;p&gt;國新故。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;From &lt;a href=&quot;http://www.richyli.com/tool/loremipsum/&quot;&gt;亂數假文產生器 - Chinese Lorem Ipsum.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-简体中文测试&quot;&gt;3. 简体中文测试&lt;/h3&gt;
+
+&lt;p&gt;效育声去本义然空，各值太法心想，场强实地。 题铁习点儿表管少间千，只何政亲织文意部，千影画派证男须。 手反取长风治增非等直难群，连取及天他己事头级，影数弦适把气快目人。 专议以省通引而千个，格则口段度样水热马，地教少务改磨。 包思外心半院应她算斯，市外会快记路又火学，劳如肃它准众丧边。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;团算部住县单总边素格军所，合音府教看和广光采率位转，位用品根确针百。 证其标元角工方海接交他，论象切万世认一响义，治然身本风弦带题。 向我次路持加北，她不反心。 说总元军例市决，现始即算证养，规走还壳。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;因林可相儿应满军，热影省条律因资再，整肃赤心将届。 局广写两量备验还，南教事争工民的，备进研上布。 素身电活非直，速这区交示从，百层达。 资量那毛什京身，白这快。 半打容三手开常价或，手严量般象式效，名可重芽门适。 来设什一我么，光界美么或，住身式准。 造酸改表委验众办地百养，商物战众本列听度名院，制压录丽快与千机内。 住需当四议决得命南然照按民置，当住命形金决否矿单外。 气象理离开新集增际，三划方工义很年关，拉许准孝口。 构片出干计由备美打养，持育总指承入无己。&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&quot;http://www.cancms.com/content/dummytext&quot;&gt;假文生成器， lorem ipsum Chinese&lt;/a&gt;&lt;/p&gt;</content><author><name>Brian Junker-Latocha</name></author><category term="example2" /><summary type="html">Note: I took this test post from moving, which is another Jekyll theme which is better that this one so I should not have linked it because now you will decide to use it instead of mine.</summary></entry><entry><title type="html">Overview Post</title><link href="http://localhost:4000/overview-post.html" rel="alternate" type="text/html" title="Overview Post" /><published>2020-07-07T00:00:00+02:00</published><updated>2020-07-07T00:00:00+02:00</updated><id>http://localhost:4000/overview-post</id><content type="html" xml:base="http://localhost:4000/overview-post.html">&lt;p&gt;Lorem ipsum&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus.&lt;/p&gt;
+
+&lt;h1 id=&quot;sample-heading-1&quot;&gt;Sample heading 1&lt;/h1&gt;
+&lt;h2 id=&quot;sample-heading-2&quot;&gt;Sample heading 2&lt;/h2&gt;
+&lt;h3 id=&quot;sample-heading-3&quot;&gt;Sample heading 3&lt;/h3&gt;
+&lt;h4 id=&quot;sample-heading-4&quot;&gt;Sample heading 4&lt;/h4&gt;
+&lt;h5 id=&quot;sample-heading-5&quot;&gt;Sample heading 5&lt;/h5&gt;
+&lt;h6 id=&quot;sample-heading-6&quot;&gt;Sample heading 6&lt;/h6&gt;
+
+&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.&lt;/p&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+
+&lt;p&gt;Unordered:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fusce non velit cursus ligula mattis convallis vel at metus&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+  &lt;li&gt;Sed pharetra tellus massa, non elementum eros vulputate non.&lt;/li&gt;
+  &lt;li&gt;Suspendisse potenti.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ordered:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Quisque arcu felis, laoreet vel accumsan sit amet, fermentum at nunc.&lt;/li&gt;
+  &lt;li&gt;Sed massa quam, auctor in eros quis, porttitor tincidunt orci.&lt;/li&gt;
+  &lt;li&gt;Nulla convallis id sapien ornare viverra.&lt;/li&gt;
+  &lt;li&gt;Nam a est eget ligula pellentesque posuere.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h2&gt;
+
+&lt;p&gt;The following is a blockquote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;thematic-breaks-hr&quot;&gt;Thematic breaks (&amp;lt;hr&amp;gt;)&lt;/h2&gt;
+
+&lt;p&gt;Mauris viverra dictum ultricies&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. &lt;strong&gt;You can put some text inside the horizontal rule like so.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr data-content=&quot;hr with text&quot; /&gt;
+
+&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. &lt;strong&gt;Or you can just have an clean horizontal rule.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. Or you can just have an clean horizontal rule.&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Now some code:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const ultimateTruth = &apos;this theme is the best!&apos;;
+console.log(ultimateTruth);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And here is some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inline code&lt;/code&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;p&gt;Now a table:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tables&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 3 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 2 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;zebra stripes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/riggraz/no-style-please/master/logo.png&quot; alt=&quot;theme logo&quot; class=&quot;ioda&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Logo of &lt;em&gt;no style, please!&lt;/em&gt; theme&lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;hr data-content=&quot;footnotes&quot; /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;this is a footnote. It should highlight if you click on the corresponding superscript number. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;hey there, i’m using no style please! &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;this is another footnote. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;this is a very very long footnote to test if a very very long footnote brings some problems or not. I strongly hope that there are no problems but you know sometimes problems arise from nowhere. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Brian Junker-Latocha</name></author><category term="example" /><summary type="html">Lorem ipsum1 dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. this is a footnote. It should highlight if you click on the corresponding superscript number. &amp;#8617;</summary></entry></feed>
