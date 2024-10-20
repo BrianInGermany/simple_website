@@ -3,10 +3,10 @@ layout: home
 title: Brian Junker-Latocha
 ---
 ### Profile
-Please find my <a href="/contact">contact</a> details here.
+_Please find my <a href="/contact">contact</a> details here._
 
-Feel free to explore my <a href="/competencies">competencies</a>
+_Feel free to explore my <a href="/competencies">competencies</a>_
   
-or peruse my <a href="/curriculum">curriculum vitae</a>.
+_or peruse my <a href="/curriculum">curriculum vitae</a>._
       
 ### Posts
