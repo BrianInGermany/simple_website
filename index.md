@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Brian Junker-Latocha
 ---
 ### Profile
 Please find my <a href="/contact">contact</a> details here. 
