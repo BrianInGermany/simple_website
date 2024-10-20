@@ -1,11 +1,11 @@
 ---
 layout: home
 ---
+### Profile
+Please find my <a href="/contact">contact</a> details here. 
 
-<hr>
-impressum
-
-Brian Junker-Latocha  
-Hermann-Steinhäuser-Str. 18  
-63065 Offenbach  
-Germany
+Feel free to explore my <a href="/competencies">competencies</a>
+  
+or peruse my <a href="/curriculum">curriculum vitae</a>.  
+      
+### Posts

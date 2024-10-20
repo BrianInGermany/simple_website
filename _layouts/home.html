@@ -7,7 +7,31 @@ layout: default
     <p>{{ site.description }}</p>
   {%-endif-%}
 </header>
+<style>
+  body {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+  };
+  ul {
+            list-style-position: inside; /* Keep bullets inside the list container */
+            padding-left: 0;             /* Remove default padding */
+            display: inline-block;        /* Make the list inline-block to center it */
+            text-align: center;             /* Align text and bullets properly inside the list */
+        };
+  
+</style>
+{{ content }}
 
 {%-include menu_item.html collection=site.data.menu.entries-%}
 
-{{ content }}
+<hr/>
+<b>Impressum</b></br></br> 
+
+Brian Junker-Latocha</br> 
+Hermann-Steinhäuser-Str. 18</br> 
+63065 Offenbach</br> 
+Germany
+
+
+

@@ -3,14 +3,7 @@
 
 
 entries:
-  - title: Hello
-    entries:
-      - title: please find my <a href="/contact">contact</a> details here
-      - title: feel free to explore my <a href="/competencies">competencies</a>
-      - title: or peruse my <a href="/curriculum">curriculum vitae</a>
-      
-
-  - title: Thoughts
+  - title: ""
     post_list:
       limit: 5
       show_more: true
