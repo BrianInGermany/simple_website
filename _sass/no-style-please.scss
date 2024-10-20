@@ -1,18 +1,17 @@
-// -------------- THEME SWITCHER -------------- //
-@mixin dark-appearance {
-  filter: invert(1);
-  img {
-    filter: invert(1);
 
-    &.ioda { filter: invert(0); }
-  }
+// -------------- THEME SWITCHER (DISABLED DARK MODE) -------------- //
+@mixin dark-appearance {
+  // Dark mode appearance is intentionally left empty to disable it
 }
 
-body[a="dark"] { @include dark-appearance; }
-
+body[a="dark"] {
+  // Dark mode is disabled, no styles applied
+}
 
 @media (prefers-color-scheme: dark) {
-  body[a="auto"] { @include dark-appearance; }
+  body[a="auto"] {
+    // Even if the system prefers dark mode, we do nothing here
+  }
 }
 // -------------------------------------------- //
 
