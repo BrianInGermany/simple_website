@@ -8,5 +8,5 @@ Professionally, I focus on technical communication with an eye toward getting al
 
 Personally, my focus includes the above passions and extends them with card playing, [writing books](/books) and [writing folk music](/music).
 
-Fun fact: I'm also a trained house painter, or "Maler- und Lackierergeselle" (not accepting jobs :) ).
+Fun fact: I'm also a trained house painter, or "Maler- und Lackierergeselle" (not accepting jobs).
   
