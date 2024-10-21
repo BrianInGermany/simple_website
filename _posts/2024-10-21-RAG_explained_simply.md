@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "RAG: A Pictorial Explanation"
-description: "Build an internal AI with Retrieval Augmented Generation"
+description: "Augement your model with company data"
 ---
 What is Retrieval Augmented Generation? Allow me to broadly generalize and paint a picture on the virtual whiteboard:
 
