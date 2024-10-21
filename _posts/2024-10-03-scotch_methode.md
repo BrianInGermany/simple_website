@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The SCOTCH Method of Problem Analysis"
+title:  "The SCOTCH Method of Problem Solving"
 description: "Distilling an issue's root cause"
 ---
 
