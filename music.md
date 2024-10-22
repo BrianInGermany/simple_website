@@ -30,6 +30,6 @@ The full album, __Rhythm & Rhyme__, is available [everywhere good music is strea
 
 And don't forget Offenbach am Main's premier old-time group, [Open Creek Stringband](https://opencreekstringband.com)!
 
-<audio src="assets\music\idontlovenobody.mp3" controls></audio> 
+<audio src="assets\audio\idontlovenobody.mp3" controls></audio> 
 
 ![](assets/images/latzfunstramu.jpeg)
