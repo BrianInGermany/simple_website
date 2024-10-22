@@ -11,5 +11,5 @@ entries:
       show_more_url: archive.html
 passions:
   - title: '<i><a href="/books">Books and Writing</a></i><br><br>'
-  - title: '<i><a href="/music">Music and Songs</a></i><br><br>'
+  - title: '<i><a href="/music">Songs and Music</a></i><br><br>'
   - title: '<i><a href="/gadgets">Inventions and Gadgets</a></i>'
