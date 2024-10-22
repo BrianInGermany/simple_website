@@ -37,3 +37,9 @@ Orderable in your local bookstore from Dec. 1st, 2023:
 #### From the internet
 
 You can download a [free courtesy copy](https://junker-latocha.com/assets/schafkopf-junkerlatocha.pdf) here. 
+
+## Gute Lösungen brauchen gute Losungen
+
+A book about the power of convincing communication in the IT world.
+
+Coming 2025.

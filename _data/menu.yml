@@ -9,4 +9,7 @@ entries:
       show_more: true
       show_more_text: See archive...
       show_more_url: archive.html
-
+passions:
+  - title: '<i><a href="/books">Books and Writing</a></i><br><br>'
+  - title: '<i><a href="/music">Music and Songwriting</a></i><br><br>'
+  - title: '<i><a href="/gadgets">Inventions and Gadgets</a></i>'

@@ -21,4 +21,17 @@
     {%-if item.entries-%}
       {%-include menu_item.html collection=item.entries-%}
     {%-endif-%}
+
+    {%-if item.passions-%}
+    {%- for passion in item.passions -%}
+  
+          
+          {{ passion.title }}
+        <br><br>
+    {%- endfor -%}
+  {%-endif-%}
+
+  {%-if item.entries-%}
+    {%-include menu_item.html collection=item.entries-%}
+  {%-endif-%}
   {%-endfor-%}
