@@ -20,7 +20,7 @@ halte mich bitte nicht für verrückt. Was ich Dir in diesem Buch vermitteln mö
 
 Eine Welt wäre sehr wünschenswert, in der Anforderungen wie Pakete auf dem Regal stehen würden und wir als ITlerinnen und ITler sie nur stillschweigend herunterzunehmen bräuchten und an die richtige Person zu liefern. Im Gegensatz zum Zauberstab-Laden bei Harry gibt es aber im Tech-Business selten eine Lösung, bei der out-of-the-box die Funken fliegen. Es braucht Denkarbeit und Kommunikation und ist alles leider ein bisschen weniger imposant.
 
-Blabla ist oft nicht das Was, sondern das Warum -- und als Technologiebauende verkaufen wir natürlich das Was. Wir bauen Systeme, entwickeln sie, warten sie, planen sie. Und so gesehen hat das ganze Blabla nichts mit der technischen Wertschöpfung zu tun. Oder?
+Blabla ist nicht das Was, sondern das Warum -- und als Technologiebauende verkaufen wir natürlich das Was. Wir bauen Systeme, entwickeln sie, warten sie, planen sie. Und so gesehen hat das ganze Blabla nichts mit der technischen Wertschöpfung zu tun. Oder?
 
 Über die nächsten paar Hundert Seiten möchte ich aus der Brille eines Musiker-Linguisten-IT-Projektmanagers erklären, warum gute Lösungen gute Losungen brauchen: Sie brauchen Kommunikation, sie brauchen Abstimmung -- aber mehr als alles Andere: Sie brauchen überzeugende, fundierte Mehrwerte, nach außen und innen. Und diese erreicht man nur, wenn man begeisternde Worte findet, die in der Sprache von Kunden, Managern und Technikern alle die gleiche Bedeutung haben.
 
