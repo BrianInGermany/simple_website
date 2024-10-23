@@ -18,7 +18,7 @@ Liebe Leserin, lieber Leser,
 
 halte mich bitte nicht für verrückt. Was ich Dir in diesem Buch vermitteln möchte, wird von vielen Technikerinnen und Technikern für puren Unfug gehalten -- das größte Übel der IT-Welt seien doch die großen Palaverer, die ohne jeglichen Kontakt zur Technik zehn mal den Plan von links auf rechts drehen und den ganzen Tag eh nur im Büro rumlaufen und quatschen (um von ihren kreativen Whiteboard-Sessions ganz zu schweigen). Nein, mehr Blabla in der IT zu fordern klingt, jedenfalls nach der obigen Definition, ganz und gar nicht nach einer guten Idee.
 
-Eine Welt wäre sehr wünschenswert, in der Anforderungen wie Pakete auf dem Regal stehen würden und wir als ITlerinnen und ITler sie nur stillschweigend herunterzunehmen bräuchten und an die richtige Person zu liefern. Im Gegensatz zum Zauberstab-Laden bei Harry gibt es aber im Tech-Business selten eine Lösung, bei der out-of-the-box die Funken fliegen. Es braucht Denkarbeit und Kommunikation und ist alles leider ein bisschen weniger imposant.
+Eine Welt wäre sehr wünschenswert, in der Anforderungen wie Pakete auf dem Regal stehen würden und wir als ITlerinnen und ITler sie nur stillschweigend herunterzunehmen bräuchten und an die richtige Person zu liefern. Im Gegensatz zum Zauberstab-Laden bei Olivander gibt es aber im Tech-Business selten eine Lösung, bei der out-of-the-box die Funken fliegen. Es braucht Denkarbeit und Kommunikation und ist alles leider ein bisschen weniger imposant.
 
 Blabla ist nicht das Was, sondern das Warum -- und als Technologiebauende verkaufen wir natürlich das Was. Wir bauen Systeme, entwickeln sie, warten sie, planen sie. Und so gesehen hat das ganze Blabla nichts mit der technischen Wertschöpfung zu tun. Oder?
 
