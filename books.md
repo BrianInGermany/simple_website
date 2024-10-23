@@ -7,7 +7,7 @@ title: Books
  
 ### Für mehr Blabla in der IT
 
-> __Blabla__, das: leeres Gerede, nichtssagende [aber anspruchsvoll klingende] Äußerungen
+> __Blabla, das__: leeres Gerede, nichtssagende [aber anspruchsvoll klingende] Äußerungen
 
 Liebe Leserin, lieber Leser, 
 
