@@ -3,7 +3,8 @@ layout: page
 title: Books
 ---
 
-## Gute Lösungen brauchen gute Losungen: _Für mehr Blabla in der IT_
+## Gute Lösungen brauchen gute Losungen: 
+Für mehr Blabla in der IT
 ### Auszug
 (Erscheint 2025)
 
