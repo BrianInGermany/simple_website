@@ -5,7 +5,7 @@ title: Books
 
 ## Gute Lösungen brauchen gute Losungen  
 
-<img src="assets/images/Screenshot_20241023-074856.png" alt="glblbook" width="50%">
+<img src="assets/images/Screenshot_20241023-074856.png" alt="glblbook" width="60%">
 
 
 ### Auszug
