@@ -4,7 +4,10 @@ title: Books
 ---
 
 ## Gute Lösungen brauchen gute Losungen  
-Für mehr Blabla in der IT
+
+<img src="assets/images/Screenshot_20241023-074856.png" alt="glblbook" width="50%">
+
+
 ### Auszug
 (Erscheint 2025)
 
