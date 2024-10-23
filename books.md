@@ -24,6 +24,7 @@ Blabla ist oft nicht das Was, sondern das Warum -- und als Technologiebauende ve
 
 Über die nächsten paar Hundert Seiten möchte ich aus der Brille eines Musiker-Linguisten-IT-Projektmanagers erklären, warum gute Lösungen gute Losungen brauchen: Sie brauchen Kommunikation, sie brauchen Abstimmung -- aber mehr als alles Andere: Sie brauchen überzeugende, fundierte Mehrwerte, nach außen und innen. Und diese erreicht man nur, wenn man begeisternde Worte findet, die in der Sprache von Kunden, Managern und Technikern alle die gleiche Bedeutung haben.
 
+<hr/>
 
 ## Schafkopf for Expats
 
