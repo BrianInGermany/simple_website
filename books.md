@@ -22,7 +22,7 @@ Eine Welt wäre sehr wünschenswert, in der Anforderungen wie Pakete auf dem Reg
 
 Blabla ist nicht das Was, sondern das Warum -- und als Technologiebauende verkaufen wir natürlich das Was. Wir bauen Systeme, entwickeln sie, warten sie, planen sie. Und so gesehen hat das ganze Blabla nichts mit der technischen Wertschöpfung zu tun. Oder?
 
-Über die nächsten paar Hundert Seiten möchte ich aus der Brille eines Musiker-Linguisten-IT-Projektmanagers erklären, warum gute Lösungen gute Losungen brauchen: Sie brauchen Kommunikation, sie brauchen Abstimmung -- aber mehr als alles Andere: Sie brauchen überzeugende, fundierte Mehrwerte, nach außen und innen. Und diese erreicht man nur, wenn man begeisternde Worte findet, die in der Sprache von Kunden, Managern und Technikern alle die gleiche Bedeutung haben.
+Über die nächsten paar Hundert Seiten möchte ich aus der Brille eines Musiker-Linguisten-IT-Projektmanagers erklären, warum gute Lösungen gute Losungen brauchen: Sie brauchen Kommunikation, sie brauchen Abstimmung -- aber mehr als alles Andere: Sie brauchen überzeugende, fundierte Mehrwert -- nach außen und innen. Und diese erreicht man nur, wenn man begeisternde Worte findet, die in der Sprache von Kunden, Managern und Technikern alle die gleiche Bedeutung haben.
 
 <hr/>
 
