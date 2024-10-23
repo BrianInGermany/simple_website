@@ -4,7 +4,6 @@ title: Books
 ---
 
 ## Gute Lösungen brauchen gute Losungen:
- 
 ### Für mehr Blabla in der IT
 
 > __Blabla, das__: leeres Gerede, nichtssagende [aber anspruchsvoll klingende] Äußerungen
