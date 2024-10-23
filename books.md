@@ -3,8 +3,10 @@ layout: page
 title: Books
 ---
 
-## Gute Lösungen brauchen gute Losungen:
-### Für mehr Blabla in der IT
+## Gute Lösungen brauchen gute Losungen: _Für mehr Blabla in der IT_
+### Auszug
+(Erscheint 2025)
+
 
 > __Blabla, das__: leeres Gerede, nichtssagende [aber anspruchsvoll klingende] Äußerungen
 
