@@ -11,5 +11,6 @@ You might call it a strange hobby, but I really enjoy bringing all my skillsets 
 #### Youtube Channel [The AI Singer](https://www.youtube.com/@ai_refrains)  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ZQWryKk0rWBbiz2r&amp;list=PLnzeV97J5N8Z6zxNV8J-PNgLtlktzfk9l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#### "Gute Lösungen brauchen gute Losungen"  
+#### "Gute Lösungen brauchen gute Losungen"   
+![](/assets/images/guteloesungenWB.jpeg)  
 <audio src="assets\audio\gute_loesungen.mp3" controls></audio> 
