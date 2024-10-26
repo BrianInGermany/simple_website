@@ -27,7 +27,7 @@ Indem ich die Kundin auffordere, die Lücken der Informationslage zu ergänzen, 
 
 Im besten Fall habe ich nicht nur 1 und 2 erledigt, sogar dabei sogar ihre kostbare Zeit geschont, da sie nur ein paar Worte zu liefern brauchte. 
 
-Doch im anderen Fall realisiert die Kundin durch meine Lückendarstellung, dass meine Sicht auf die Lage überhaupt nicht adäquat ist. Sie zerreißt meinen Lückentext sprichwörtlich in der Luft -- doch wir sind beide dadurch klüger geworden.
+Doch im anderen Fall realisiert die Kundin durch meine Lückendarstellung, dass meine Sicht auf die Lage überhaupt nicht adäquat ist. Sie zerreißt meinen Lückentext sprichwörtlich in der Luft -- und wir sind beide dadurch klüger geworden.
 
 > Ich brauche diese Änderung, weil ich damit in die Lage versetzt werde, z.B. \_\_\_\_\_ und \_\_\_\_\_ zu tun. Auf jeden Fall in der Änderung berücksichtigt werden müssen z.B. die Aspekte \_\_\_\_\_ und \_\_\_\_\_, sonst bringt das mich nicht weiter. Spätestens bis \_\_\_\_\_ sollte die Änderung implementiert sein, da sonst \_\_\_\_\_.
 
