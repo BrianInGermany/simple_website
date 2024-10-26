@@ -3,7 +3,7 @@ layout: post
 title:  "Mut zur Lücke!"
 description: "Anforderungsklärung mit der Lückenmethode"
 ---
-
+### Anforderungsklärung mit der Lückenmethode  
 In der IT-Welt kommen nicht selten Tickets mit wenig Fleisch dran. 
 
 Aus der agilen Welt kennen wir zwar die Zauberformel:
