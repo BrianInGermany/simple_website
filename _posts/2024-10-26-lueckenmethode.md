@@ -12,7 +12,7 @@ Aus der agilen Welt kennen wir zwar die Zauberformel:
 
 Doch sie wird selten gelebt und ist in vielen Fällen auch nicht direkt passend zum Gegenstand des Tickets.
 
-In einer Kombination aus Faulheit und begründeter Ausrede begehen wir den Fehler, diese Kommunikationsweise komplett zu verlassen. Klar, die starre Vorlage ist nicht auf jedes Problem der IT-Welt anwendbar. Doch die Angewohntheit, bei jeder Anforderungskommunikation das Wesentliche explizit zu machen, sollte man nie verkommen lassen.
+In einer Kombination aus Faulheit und begründeter Ausrede begehen wir den Fehler, diese Kommunikationsweise komplett zu verlassen. Klar, die starre Vorlage ist nicht auf jedes Problem der IT-Welt anwendbar. Doch die Angewohnheit, bei jeder Anforderungskommunikation das Wesentliche explizit zu machen, sollte man nie verkommen lassen.
 
 In diesem kurzen Post möchte ich eine Anforderungsmethode vorstellen, die mir selbst bereits großen Nutzen gebracht hat -- sowohl in der Ticketformulation, als auch im tagtäglichen Austausch.
 
