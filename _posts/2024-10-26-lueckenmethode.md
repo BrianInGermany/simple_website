@@ -35,5 +35,5 @@ Der obige Beispielstext ist sehr allgemein gehalten, aber man kann und sollte al
 
 Gestalte die Kommunikation mit allen Informationen, die du hast, als _fehlbaren Vorschlag_ und lass dich gerne korrigieren. So kommt man im Ping-Pong des Alltags um große Schritte weiter.
 
-PS: Oft lohnt es auch, emotionsbezogene Lücken einzubauen, um abzutasten wie die Kundin bestimmte Situationen werten oder werten würden.
+PS: Oft lohnt es auch, emotionsbezogene Lücken einzubauen, um abzutasten wie die Kundin bestimmte Situationen wertet oder werten würde.
 
