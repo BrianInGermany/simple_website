@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "The IT Singer: Mit Refrain durch die Tech-Welt"
+title: "The IT Singer: Mit Refrain durch die IT-Kommunikation"
 ---
 
 You might call it a strange hobby, but I really enjoy bringing all my skillsets together into a single format. This section is devoted to my musical IT creations.  
