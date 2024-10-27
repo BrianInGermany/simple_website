@@ -11,7 +11,5 @@ You might call it a strange hobby, but I really enjoy bringing all my skillsets 
 #### Youtube Channel [The IT Singer](https://www.youtube.com/@ai_refrains)  
 <iframe width="100%"  src="https://www.youtube.com/embed/videoseries?si=ZQWryKk0rWBbiz2r&amp;list=PLnzeV97J5N8Z6zxNV8J-PNgLtlktzfk9l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#### "Gute Lösungen"   
-![](/assets/images/guteloesungenWB.jpeg)   
-
-<audio src="assets\audio\GLBGLpodcast1.mp3" controls></audio> 
+#### Podcast   
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/7fqTvDPdYEfTqr4geEQ54G?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
