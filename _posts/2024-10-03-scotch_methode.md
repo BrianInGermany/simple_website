@@ -4,7 +4,7 @@ title:  "The SCOTCH Method of Problem Solving"
 description: "Distilling an issue's root cause"
 ---
 
-![](/assets/images/scotch_booklet.jpg)
+> ![](/assets/images/scotch_booklet.jpg)
 
 Problems can be complicated, and each vintage is its own witches' brew of causes and considerations.
 
