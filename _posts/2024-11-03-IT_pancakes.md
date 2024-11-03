@@ -24,7 +24,7 @@ The fact remains, the learned instinct necessary for perfect pancakes Sunday aft
 
 ---
 
-In the IT business, we have solutions hitting the pan day in, day out. And what separates the seasoned IT flapjack flippers from the weekend wannabes is their ability to produce those fluffy maple-syrup sponges every single time, on time, in time.
+In the IT business, we have solutions hitting the pan day in, day out. And what separates the seasoned IT flapjack flippers from the weekend wannabes is their ability to produce fluffy maple-syrup sponges time, and time again.
 
 Sure, everyone has an off-day. But reliable IT professionals know their way around a griddle.
 
