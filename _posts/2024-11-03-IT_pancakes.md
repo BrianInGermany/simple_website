@@ -5,7 +5,7 @@ description: "When IT solutions hit the cast-iron"
 image: "/assets/images/pancakesWide.jpeg"
 --- 
 
-### When solutions hit the cast-iron
+### When IT solutions hit the cast-iron
 > ![pancakes](/assets/images/pancakes.jpeg) 
 
 Making the perfect pancake is no small feat. Sure, with just four ingredients, one might say, "Whatever could go wrong?".
