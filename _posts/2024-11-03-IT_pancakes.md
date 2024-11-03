@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "The Perfect Pancake"
-description: "When IT solutions hit the cast-iron"
+description: "When solutions hit the cast-iron"
 image: "/assets/images/pancakesWide.jpeg"
 --- 
 
-### When IT solutions hit the cast-iron
+### When solutions hit the cast-iron
 > ![pancakes](/assets/images/pancakes.jpeg) 
 
 Making the perfect pancake is no small feat. Sure, with just four ingredients, one might say, "Whatever could go wrong?".
