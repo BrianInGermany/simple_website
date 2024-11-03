@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cavolo nero in der KI"
+title:  "Cavolo nero in der KI?"
 description: "Über nahtlose Integration am Gemüsestand"
 --- 
 
