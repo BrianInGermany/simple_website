@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cavolo nero in der KI"
-description: "Über nahtlose Integration in den Gemüsestand"
+description: "Über nahtlose Integration am Gemüsestand"
 --- 
 
 >![gemuese](/assets/images/marktgemuese.jpeg) 
