@@ -16,7 +16,6 @@ And I guarantee you, whatever you do with those ingredients (within the limits o
 
 But if you want them perfect-- and you want to do it reproducibly-- it takes way more than those four bullet points.
 
-#### What it takes?
 It takes practice. Maybe you need a recipe to remind you of the ratios-- maybe a mnemonic to tell you if the batter should be like pudding or like melted ice cream.
 
 Whatever aids you avail, the first few batches will be hit-or-miss. Oh, you'll have some great ones you can post on Instagram to show off-- and you'll have some flat ones more akin to a tortilla than a fluffy buttermilk flapjack.
