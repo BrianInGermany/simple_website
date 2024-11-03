@@ -2,6 +2,7 @@
 layout: post
 title:  "Cavolo nero in der KI?"
 description: "Über nahtlose Integration am Gemüsestand"
+image: "/assets/images/PXL_20241102_093653935.jpg"
 --- 
 
 ### Über nahtlose Integration am Gemüsestand
