@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "The Perfect IT Pancake"
-description: "When solutions hit the cast-iron"
+title:  "The Perfect Pancake"
+description: "When IT solutions hit the cast-iron"
 image: "/assets/images/pancakesWide.jpeg"
 --- 
 
