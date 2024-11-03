@@ -7,7 +7,7 @@ image: "/assets/images/PXL_20241102_093653935.jpg"
 
 ### Über nahtlose Integration am Gemüsestand
 
-![gemuese](/assets/images/PXL_20241102_093653935.jpg) 
+> ![gemuese](/assets/images/PXL_20241102_093653935.jpg) 
 
 Spinat, Mangold, Grünkohl: Das deutsche Herbstgemüse kennt man. Doch wer schleicht sich noch ins harmonische Bild des Blattgemüses von eh und je?
 

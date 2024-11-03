@@ -5,8 +5,7 @@ description: "Use a Contact-Task Graph to Trace Your Communication Backbone"
 date:   2022-02-10 21:51:00 +0100
 categories: jekyll update
 tags: thinking-aids graphviz
-header:
-  teaser: "/assets/images/contact_skeleton.png"
+image: "/assets/images/contact_skeleton.png"
 ---
 <img src="/assets/images/xray.jpg" alt="hand_skeleton">
 A team's lines of communication make up its organizational backbone for getting tasks done.

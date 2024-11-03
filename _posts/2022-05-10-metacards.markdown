@@ -5,8 +5,7 @@ description: "Meta4 Cards: an ideation tool for reflecting on iterations"
 date:   2022-05-10 22:01:00 +0100
 categories: jekyll update
 tags: organization thinking-aids
-header:
-  teaser: "/assets/images/metacards.jpeg"
+image: "/assets/images/metacards.jpeg"
 ---
 
 <a href="/assets/metacards.pdf" download="metacards">

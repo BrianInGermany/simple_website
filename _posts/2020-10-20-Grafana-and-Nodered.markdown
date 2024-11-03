@@ -6,8 +6,7 @@ date:   2020-10-20 20:37:00 +0100
 categories: jekyll update
 my_setup: "Raspberry Pi 3B, esp8266 sensors sending MQTT, Mosquitto MQTT broker, Node-Red receiving MQTT"
 tags: raspberrypi grafana nodered influxdb
-header:
-  teaser: "/assets/images/grafanaDash.png"
+image: "/assets/images/grafanaDash.png"
 
 ---
 

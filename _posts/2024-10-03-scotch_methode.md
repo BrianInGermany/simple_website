@@ -2,6 +2,7 @@
 layout: post
 title:  "The SCOTCH Method of Problem Solving"
 description: "Distilling an issue's root cause"
+image: "/assets/images/scotch_booklet.jpg"
 ---
 
 > ![](/assets/images/scotch_booklet.jpg)

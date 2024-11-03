@@ -2,6 +2,7 @@
 layout: post
 title:  "RAG: A Pictorial Explanation"
 description: "Augment your model with company data"
+image: "/assets/images/rag_pres.gif"
 ---
 What is Retrieval Augmented Generation? Allow me to broadly generalize and paint a picture on the virtual whiteboard:
 

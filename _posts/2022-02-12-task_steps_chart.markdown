@@ -5,8 +5,7 @@ description: "Communicate task structures to your team visually"
 date:   2022-02-12 08:43:00 +0100
 categories: jekyll update
 tags: thinking-aids graphviz
-header:
-  teaser: "/assets/images/task_steps.png"
+image: "/assets/images/task_steps.png"
 ---
 
 <img src="/assets/images/task_steps.png" alt="task_step">

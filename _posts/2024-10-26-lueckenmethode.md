@@ -2,8 +2,11 @@
 layout: post
 title:  "Mut zur Lücke!"
 description: "Anforderungsklärung mit der Lückenmethode"
+image: "/assets/images/lueckentext.jpeg"
 ---
 ### Anforderungsklärung mit der Lückenmethode  
+![](/assets/images/lueckentext.jpeg)
+
 In der IT-Welt kommen nicht selten Tickets mit wenig Fleisch dran. 
 
 Aus der agilen Welt kennen wir zwar die Zauberformel:
