@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "KI-Schwarzkohl?"
-description: "Über nahtlose Integration in die Lösungslandschaft"
+description: "Über die nahtlose Integration in die Lösungslandschaft"
 --- 
 
 >![gemuese](/assets/images/marktgemuese.jpeg) 
