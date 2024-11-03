@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Schwarzkohl in der KI"
-description: "Nahtlose KI-Integration als Muss"
+title:  "KI-Schwarzkohl?"
+description: "Über nahtlose Integration in die Lösungslandschaft"
 --- 
 
 >![gemuese](/assets/images/marktgemuese.jpeg) 
