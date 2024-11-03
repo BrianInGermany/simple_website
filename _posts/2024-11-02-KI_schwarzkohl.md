@@ -16,4 +16,4 @@ Gute KI-Lösungen sind _cavolo nero_: Sie stammen aus einer anderen Kultur und s
 
 > ![schwarzkohl](/assets/images/schwarzkohl.png)  
  
-Die besten KI-Projekte werden Schwarzkohl-Projekte: Die basieren auf einer komplett neuen Matiere, setzen Technologien ein, die im Unternehmen bisher völlig fremd waren. Doch sie sind so sorgsam gestaltet und gewählt -- so treffend für den jeweiligen Case, dass sie das maximale Produkt aus Technik mal Anwendung schaffen.
+Die besten KI-Projekte werden Schwarzkohl-Projekte: Die basieren auf einer komplett neuen Matiere, setzen Technologien ein, die im Unternehmen bisher völlig fremd waren. Doch sie werden so sorgsam gewählt -- so treffend für den jeweiligen Case gestaltet, dass sie das maximale Produkt aus Technik mal Anwendung schaffen.
