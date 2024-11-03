@@ -4,7 +4,9 @@ title:  "Cavolo nero in der KI"
 description: "Über nahtlose Integration am Gemüsestand"
 --- 
 
->![gemuese](/assets/images/marktgemuese.jpeg) 
+### Über nahtlose Integration am Gemüsestand
+
+>![gemuese](/assets/images/PXL_20241102_093653935.jpg) 
 
 Spinat, Mangold, Grünkohl: Das deutsche Herbstgemüse kennt man. Doch wer schleicht sich noch ins harmonische Bild des Blattgemüses von eh und je?
 
@@ -14,7 +16,7 @@ Gute KI-Lösungen sind _cavolo nero_: Sie stammen aus einer anderen Kultur und s
 
 #### KI-Projekte als _Schwarzkohl_-Projekte:  
 
-> ![schwarzkohl](/assets/images/schwarzkohl.png)  
+> ![schwarzkohl](/assets/images/PXL_20241102_094044404.jpg)  
  
 Die besten KI-Projekte sind Schwarzkohl-Projekte: Die basieren auf einer komplett neuen Matiere, setzen Technologien ein, die im Unternehmen bisher völlig fremd waren. Doch sie werden so sorgsam gewählt -- so treffend für den jeweiligen Case gestaltet, dass sie das maximale Produkt aus Technik mal Anwendung schaffen.
 
