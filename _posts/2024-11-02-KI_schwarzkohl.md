@@ -24,3 +24,5 @@ Die besten KI-Projekte sind Schwarzkohl-Projekte: Die basieren auf einer komplet
 Packe also nicht die eierlegenden Wollmilchsäue an Deinen Gemüsestand -- suche nach Deinem _cavolo nero_.
 
 Hattest Du bereits selbst ein _cavolo nero_-Projekt? Erzähle gerne per [E-Mail](mailto:brian@junker-latocha.com) oder [LinkedIn-Kommentar](https://www.linkedin.com/in/junker-latocha/).
+
+Ich freu mich drauf.
