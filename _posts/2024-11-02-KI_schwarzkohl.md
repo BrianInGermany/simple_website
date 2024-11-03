@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "KI-Schwarzkohl?"
-description: "Über die nahtlose Integration in die Lösungslandschaft"
+title:  "Cavolo nero in der KI"
+description: "Nahtlose Integration in die Lösungslandschaft"
 --- 
 
 >![gemuese](/assets/images/marktgemuese.jpeg) 
