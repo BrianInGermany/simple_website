@@ -10,10 +10,10 @@ Spinat, Mangold, Grünkohl: Das deutsche Herbstgemüse kennt man. Doch wer schle
 
 Es ist der _cavolo nero_ aus dem fernen Italien -- er bringt Frisches und Neues rein und passt voll ins Konzept!
 
-Gute KI-Lösungen sind _cavolo nero_: Sie stammen aus einer anderen Kultur und sind Newcomer auf dem Wochenmarkt. Doch sie ergänzen so unauffällig nahtlos unsere Unternehmenslandschaft, dass wir sie in unserer eigenen Sprache umtaufen und _Schwarzkohl_ nennen.
+Gute KI-Lösungen sind _cavolo nero_: Sie stammen aus einer anderen Kultur und sind Newcomer auf dem Wochenmarkt. Doch sie ergänzen so unauffällig unsere Unternehmenslandschaft, so nahtlos, dass wir sie in der eigenen Sprache umtaufen und _Schwarzkohl_ nennen.
 
-Die besten KI-Projekte sind _Schwarzkohl_-Projekte:  
+#### KI-Projekte als _Schwarzkohl_-Projekte:  
 
 > ![schwarzkohl](/assets/images/schwarzkohl.png)  
  
-Die basieren auf einer komplett neuen Matiere, setzen Technologien ein, die im Unternehmen bisher völlig fremd waren. Doch sie sind so sorgsam gestaltet und gewählt, dass sie genau in die Soll-Situation reinpassen und den maximalen Mehrwert aus den neuen technischen Möglichkeiten schöpfen.
+Die besten KI-Projekte werden Schwarzkohl-Projekte: Die basieren auf einer komplett neuen Matiere, setzen Technologien ein, die im Unternehmen bisher völlig fremd waren. Doch sie sind so sorgsam gestaltet und gewählt -- so treffend für den jeweiligen Case, dass sie das maximale Produkt aus _Technik_ ✕ _Anwendung_ schaffen.
