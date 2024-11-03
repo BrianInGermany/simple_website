@@ -15,7 +15,7 @@ Es ist der _cavolo nero_ aus dem fernen Italien -- er bringt Frisches und Neues 
 
 Gute KI-Lösungen sind _cavolo nero_: Sie stammen aus einer anderen Kultur und sind Newcomer auf dem Wochenmarkt. Doch sie ergänzen so unauffällig unsere Unternehmenslandschaft, so nahtlos, dass wir sie in der eigenen Sprache umtaufen und _Schwarzkohl_ nennen.
 
-#### KI-Projekte als _Schwarzkohl_-Projekte:  
+#### KI-Projekte als _Schwarzkohl_-Projekte
 
 > ![schwarzkohl](/assets/images/PXL_20241102_094044404.jpg)  
  
