@@ -19,7 +19,7 @@ It takes practice. Maybe you need a recipe to remind you of the ratios-- maybe a
 
 Whatever aids you avail, the first few batches will be hit-or-miss. Oh, you'll have some great ones you can post on Instagram-- and you'll have some flat ones more akin to a tortilla than a fluffy buttermilk flapjack.
 
-The fact remains, the learned instinct necessary for perfect pancakes, Sunday after Sunday, comes only from getting your hands dirty-- again and again.
+The fact remains, the learned instinct necessary for perfect pancakes, Sunday after Sunday, comes from getting your hands dirty-- again and again.
 
 ---
 
