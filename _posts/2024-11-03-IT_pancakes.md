@@ -20,11 +20,11 @@ It takes practice. Maybe you need a recipe to remind you of the ratios-- maybe a
 
 Whatever aids you avail, the first few batches will be hit-or-miss. Oh, you'll have some great ones you can post on Instagram to show off-- and you'll have some flat ones more akin to a tortilla than a fluffy buttermilk flapjack.
 
-The fact remains, the learned instinct necessary for perfect pancakes Sunday after Sunday comes only from getting your hands dirty-- again and again.
+The fact remains, the learned instinct necessary for perfect pancakes, Sunday after Sunday, comes only from getting your hands dirty-- again and again.
 
 ---
 
-In the IT business, we have solutions hitting the pan day in, day out. And what separates the seasoned IT flapjack flippers from the weekend wannabes is their ability to produce those fluffy, maple-syrup sponges time and time again.
+In the IT business, we have solutions hitting the pan day in, day out. And what separates the seasoned IT flapjack flippers from the weekend wannabes is their ability to produce those fluffy, maple-syrup spongecakes time and time again.
 
 Sure, everyone has an off-day. But reliable IT professionals know their way around a griddle.
 
