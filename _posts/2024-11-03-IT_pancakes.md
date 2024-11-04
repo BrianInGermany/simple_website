@@ -12,7 +12,7 @@ Making the perfect pancake is no small feat. Sure, with just four ingredients, o
 
 > FLOUR, BUTTERMILK, EGGS, BAKING SODA
 
-And I guarantee you, whatever you do with those ingredients (within the limits of reason) you'll get a batter that, without doubt, can be turned into little discs of dough widely recognizable as pancakes.
+And I guarantee you, whatever you do with those ingredients (within the limits of reason) you'll get a batter that, without doubt, can be turned into discs of dough widely recognizable as pancakes.
 
 But if you want them perfect-- and you want to do it reproducibly-- it takes way more than those four bullet points.
 
