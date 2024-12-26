@@ -3,8 +3,6 @@ layout: page
 title: Music
 ---
 
-## Songwriting
-
 
 <img src="/assets/images/brian_bar.jpg" width="500">    
 <p class=center_please>(image credit <a href="https://www.felixrosic.de/">Felix Rosić</a>)</p>
