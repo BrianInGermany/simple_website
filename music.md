@@ -21,9 +21,107 @@ So buckle up, turn the key, and crank up the stereo. And let Brian Junker-Latoch
 The full album, __Rhythm & Rhyme__, is available [everywhere good music is streamed](https://listen.music-hub.com/UJeuyU).
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BdObYOU_AZI?si=fHczYXA8j2vwxhkd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+  <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+  <a class="bit-widget-initializer"
+    
+	data-artist-name="id_15569458"
+	
+	data-events-to-display=""
+	data-background-color="rgba(255,255,255,1)"
+	data-separator-color="rgba(221,221,221,1)"
+	data-text-color="rgba(66,66,66,1)"
+	data-font="Helvetica"
+	data-auto-style="true"
+	
+	data-button-label-capitalization="uppercase"
+	data-header-capitalization="uppercase"
+	data-location-capitalization="uppercase"
+	data-venue-capitalization="uppercase"
+	data-display-local-dates="true"
+	data-local-dates-position="tab"
+	data-display-past-dates="true"
+	data-display-details="false"
+	data-display-lineup="false"
+	data-display-start-time="false"
+	data-social-share-icon="false"
+	data-display-limit="all"
+	
+	data-date-format="MMM. D, YYYY"
+	data-date-orientation="horizontal"
+	data-date-border-color="#4A4A4A"
+	data-date-border-width="1px"
+	data-date-capitalization="capitalize"
+	data-date-border-radius="10px"
+	
+	data-event-ticket-cta-size="medium"
+	data-event-custom-ticket-text=""
+	data-event-ticket-text="TICKETS"
+	data-event-ticket-icon="false"
+	data-event-ticket-cta-text-color="rgba(255,255,255,1)"
+	data-event-ticket-cta-bg-color="rgba(74,74,74,1)"
+	data-event-ticket-cta-border-color="rgba(74,74,74,1)"
+	data-event-ticket-cta-border-width="0px"
+	data-event-ticket-cta-border-radius="2px"
+	
+	data-sold-out-button-text-color="rgba(255,255,255,1)"
+	data-sold-out-button-background-color="rgba(74,74,74,1)"
+	data-sold-out-button-border-color="rgba(74,74,74,1)"
+	data-sold-out-button-clickable="true"
+	
+	data-event-rsvp-position="hidden"
+	data-event-rsvp-cta-size="medium"
+	data-event-rsvp-only-show-icon="false"
+	data-event-rsvp-text="RSVP"
+	data-event-rsvp-icon="false"
+	data-event-rsvp-cta-text-color="rgba(74,74,74,1)"
+	data-event-rsvp-cta-bg-color="rgba(255,255,255,1)"
+	data-event-rsvp-cta-border-color="rgba(74,74,74,1)"
+	data-event-rsvp-cta-border-width="1px"
+	data-event-rsvp-cta-border-radius="2px"
+	
+	data-follow-section-position="top"
+	data-follow-section-alignment="center"
+	data-follow-section-header-text="Get updates on new shows, new music, and more"
+	data-follow-section-cta-size="medium"
+	data-follow-section-cta-text="FOLLOW"
+	data-follow-section-cta-icon="false"
+	data-follow-section-cta-text-color="rgba(255,255,255,1)"
+	data-follow-section-cta-bg-color="rgba(74,74,74,1)"
+	data-follow-section-cta-border-color="rgba(74,74,74,1)"
+	data-follow-section-cta-border-width="0px"
+	data-follow-section-cta-border-radius="2px"
+	
+	data-play-my-city-position="bottom"
+	data-play-my-city-alignment="center"
+	data-play-my-city-header-text="Don’t see a show near you?"
+	data-play-my-city-cta-size="medium"
+	data-play-my-city-cta-text="REQUEST A SHOW"
+	data-play-my-city-cta-icon="false"
+	data-play-my-city-cta-text-color="rgba(255,255,255,1)"
+	data-play-my-city-cta-bg-color="rgba(74,74,74,1)"
+	data-play-my-city-cta-border-color="rgba(74,74,74,1)"
+	data-play-my-city-cta-border-width="0px"
+	data-play-my-city-cta-border-radius="2px"
+	
+	data-optin-font=""
+	data-optin-text-color=""
+	data-optin-bg-color=""
+	data-optin-cta-text-color=""
+	data-optin-cta-bg-color=""
+	data-optin-cta-border-width=""
+	data-optin-cta-border-radius=""
+	data-optin-cta-border-color=""
+	
+	data-language="en"
+	data-layout-breakpoint="900"
+	data-app-id=""
+	data-affil-code=""
+	data-bit-logo-position="bottomRight"
+	data-bit-logo-color="rgba(66,66,66,1)"
+	
+    ></a>
 
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@junkerlatocha/video/7321655764404178208" data-video-id="7321655764404178208" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@junkerlatocha" href="https://www.tiktok.com/@junkerlatocha?refer=embed">@junkerlatocha</a> A little tune of mine called &#34;Flooding on the James&#34;  <a title="folk" target="_blank" href="https://www.tiktok.com/tag/folk?refer=embed">#folk</a> <a title="folkrock" target="_blank" href="https://www.tiktok.com/tag/folkrock?refer=embed">#folkrock</a> <a title="guitar" target="_blank" href="https://www.tiktok.com/tag/guitar?refer=embed">#guitar</a> <a title="songwriter" target="_blank" href="https://www.tiktok.com/tag/songwriter?refer=embed">#songwriter</a> <a title="songwriters" target="_blank" href="https://www.tiktok.com/tag/songwriters?refer=embed">#songwriters</a> <a title="acoustic" target="_blank" href="https://www.tiktok.com/tag/acoustic?refer=embed">#acoustic</a> <a title="folksong" target="_blank" href="https://www.tiktok.com/tag/folksong?refer=embed">#folksong</a> <a title="offenbachammain" target="_blank" href="https://www.tiktok.com/tag/offenbachammain?refer=embed">#offenbachammain</a> <a target="_blank" title="♬ original sound - junker-latocha" href="https://www.tiktok.com/music/original-sound-7321655916494457633?refer=embed">♬ original sound - junker-latocha</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BdObYOU_AZI?si=fHczYXA8j2vwxhkd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
 <hr/>
 
