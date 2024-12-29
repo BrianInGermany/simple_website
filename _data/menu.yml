@@ -11,6 +11,6 @@ entries:
       show_more_url: archive.html
 passions:
   - title: '<i><a href="/music">Songs and Music</a></i><br><br>'
-- title: '<i><a href="/books">Books and Writing</a></i><br><br>'
+  - title: '<i><a href="/books">Books and Writing</a></i><br><br>'
   - title: '<i><a href="/gadgets">Gadgets and Invention</a></i><br><br>'
   - title: '<i><a href="/refrain">The IT Singer</a></i>'
