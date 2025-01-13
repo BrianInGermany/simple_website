@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Brian and Carrie
+permalink: /brianandcarrie/
 ---
 
 
