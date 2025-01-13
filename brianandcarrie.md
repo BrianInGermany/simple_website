@@ -3,6 +3,8 @@ layout: page
 title: Brian and Carrie
 permalink: /brianandcarrie/
 description:  "Brian and Carrie's foot-tapping folk melodies and hum-along harmonies are just what you need to slide into the weekend any day of the week."
+image: "/assets/images/briCarr.png"
+
 ---
 
 
