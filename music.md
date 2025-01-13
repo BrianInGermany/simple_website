@@ -26,6 +26,10 @@ Join the fan community on Discord:
 <iframe src="https://discordapp.com/widget?id=1322496606381277227&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 <hr/>
 
+## Brian and Carrie
+
+Something new is brewing! Check out the new folk duo, [Brian and Carrie](/brianandcarrie/)
+
 ## Open Creek Stringband
 
 And don't forget Offenbach am Main's premier old-time group, [Open Creek Stringband](https://opencreekstringband.com)!
