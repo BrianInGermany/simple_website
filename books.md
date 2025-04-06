@@ -7,11 +7,6 @@ title: Books
 
 <img src="assets/images/Kollaboration.png" alt="kollabbook" width="60%">
 
-
-### Auszug
-(Erscheint 2026)
-
-
 > __Kollaborationskultur, die__:Das gemeinsame Hinstreben auf im Konsens beschlossene Ziele.
 
 
