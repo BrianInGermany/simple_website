@@ -3,12 +3,11 @@ layout: page
 title: Books
 ---
 
-## Kollaborationskultur
-
 <img src="assets/images/Kollaboration.png" alt="kollabbook" width="60%">
 
-> __Kollaborationskultur, die__:Das gemeinsame Hinstreben auf im Konsens beschlossene Ziele.
+> __Kollaborationskultur, die:__ Das gemeinsame Hinstreben auf im Konsens beschlossene Ziele.   
 
+(Erscheint Ende 2025)
 
 <hr/>
 
