@@ -3,13 +3,7 @@ layout: page
 title: Books
 ---
 
-<img src="assets/images/Kollaboration.png" alt="kollabbook" width="60%">
 
-> __Kollaborationskultur, die:__ Das gemeinsame Hinstreben auf im Konsens beschlossene Ziele.   
-
-(Erscheint Ende 2025)
-
-<hr/>
 
 ## Schafkopf for Expats
 
@@ -45,3 +39,11 @@ Orderable in your local bookstore from Dec. 1st, 2023:
 #### From the internet
 
 You can download a [free courtesy copy](https://junker-latocha.com/assets/schafkopf-junkerlatocha.pdf) here. 
+
+<hr> 
+
+<img src="assets/images/Kollaboration.png" alt="kollabbook" width="60%">
+
+> __Kollaborationskultur, die:__ Das gemeinsame Hinstreben auf im Konsens beschlossene Ziele.   
+
+(Erscheint Ende 2025)
