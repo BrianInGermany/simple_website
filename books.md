@@ -6,7 +6,6 @@ title: Books
 
 
 ## Schafkopf for Expats
-![alt text](image.png)
 <img src="assets/images/schafkopf_for_expats.jpg" alt="book" width="75%">
 
 The best (and only) book out there about Bavarian Schafkopf in English! 
