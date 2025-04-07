@@ -42,7 +42,7 @@ You can download a [free courtesy copy](https://junker-latocha.com/assets/schafk
 
 <hr> 
 
-<img src="assets/images/Kollaboration.png" alt="kollabbook" width="60%">
+<img src="assets/images/Screenshot_20250407-160903.png" alt="kollabbook" width="60%">
 
 > __Kollaborationskultur, die:__ Das gemeinsame Hinstreben auf im Konsens beschlossene Ziele.   
 
