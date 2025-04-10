@@ -7,7 +7,7 @@ image: "/assets/images/IMG-20241103-WA0018.jpg"
 
 > ![gemuese](/assets/images/IMG-20241103-WA0014.jpg) 
 
-Spinat, Mangold, Grünkohl: Das deutsche Herbstgemüse kennt man. Doch siehe da, wer schleicht sich noch ins harmonische Bild des altbekannten Blattgemüses?
+Spinat, Mangold, Grünkohl: Das deutsche Herbstgemüse kennt man. Doch siehe da, wer schleicht sich noch ins Bild des altbekannten Blattgemüses?
 
 Es ist der _cavolo nero_ aus dem fernen Italien -- er bringt Frisches und Neues rein und passt voll ins Konzept!
 
