@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Books
+title: Bücher 
 ---
 
 
@@ -41,7 +41,7 @@ You can download a [free courtesy copy](https://junker-latocha.com/assets/schafk
 
 <hr> 
 
-<img src="assets/images/Screenshot_20250407-160903.png" alt="kollabbook" width="60%">
+<img src="assets/images/Screenshot_20250426-120915.png" alt="kollabbook" width="60%">
 
 > __Kollaborationskultur, die:__ Das gemeinsame Hinarbeiten auf im Konsens beschlossene Ziele.   
 
