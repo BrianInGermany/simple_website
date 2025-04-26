@@ -3,7 +3,6 @@ layout: home
 title: Brian Junker-Latocha
 ---
 ### Profil
-Herzlich Willkommen auf meiner virtuellen Visitenkarte.
 
 Meine <a href="/contact">Kontaktdaten</a> finden Sie hier.
 
