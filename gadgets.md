@@ -4,7 +4,7 @@ title: Erfindungen
 ---
 
 ## SINNBILDER 
-Ein Bild sagt mehr als tausend Worte – SINNBILDER sagen noch mehr!
+Ein Bild sagt mehr als tausend Worte – SINNBILDER noch mehr!
 
 > _Sinnbilder:_ Objekte oder Situationen, die als knackige Analogien für etwas anderes dienen.
 
