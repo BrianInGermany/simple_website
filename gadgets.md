@@ -6,7 +6,7 @@ title: Erfindungen
 ## SINNBILDER 
 Ein Bild sagt mehr als tausend Worte – SINNBILDER noch mehr!
 
-> _Sinnbilder:_ Objekte oder Situationen, die als knackige Analogien dienen.
+> _Sinnbilder:_ anschauliche Objekte und Situationen, die pointierte Analogien schaffen.
 
 SINNBILDER laden zur Reflexion ein. Ob im Berufsleben oder in der Freizeit – sie regen Gespräche über das Wesentliche an und eröffnen neue Blickwinkel.
 
