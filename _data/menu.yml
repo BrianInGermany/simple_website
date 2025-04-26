@@ -5,12 +5,12 @@
 entries:
   - title: ""
     post_list:
-      limit: 5
+      limit: 3
       show_more: true
-      show_more_text: See archive...
+      show_more_text: Archiv...
       show_more_url: archive.html
-passions:
-  - title: '<i><a href="/music">Songs and Music</a></i><br><br>'
-  - title: '<i><a href="/books">Books and Writing</a></i><br><br>'
-  - title: '<i><a href="/gadgets">Gadgets and Invention</a></i><br><br>'
+Kreationen:
+  - title: '<i><a href="/music">Lieder und Musik</a></i><br><br>'
+  - title: '<i><a href="/books">Bücher und Schrift</a></i><br><br>'
+  - title: '<i><a href="/gadgets">Erfindungen</a></i><br><br>'
   - title: '<i><a href="/refrain">The IT Singer</a></i>'
