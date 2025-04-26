@@ -3,10 +3,10 @@ layout: home
 title: Brian Junker-Latocha
 ---
 ### Profil
-Meine <a href="/contact">Kontaktdaten</a> finden Sie bitte hier.
+Meine <a href="/contact">Kontaktdaten</a> finden Sie hier.
 
-Eine Zusammenfassung meiner <a href="/competencies">Kompetenzen</a> stelle ich hier gerne zur Verfügung.
+Einen Überblick meiner <a href="/competencies">Kompetenzen</a> finden Sie hier.
   
-Oder stöbern Sie alternativ durch mein <a href="/curriculum">CV</a>.
+Oder entdecken Sie alternativ mein <a href="/curriculum">vollständiges CV</a>.
       
 ### Impulse
