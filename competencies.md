@@ -1,13 +1,17 @@
 ---
+
 layout: page
-title: Competencies
----
+title: Kompetenzen
 
-Professionally, I focus on technical communication with an eye toward getting all involved parties speaking the same language.
-- Project management, AI, cloud, Scrum, natural language processing and Python are a few words that express my main aims.
-- My day-to-day takes place at [Adacor Hosting GmbH](https://adacor.com), where I work as a Technical Account Manager.
+Meine Leidenschaft gilt der technischen Kommunikation – mit dem Ziel, alle Beteiligten auf eine gemeinsame Sprache zu bringen.
 
-Personally, my focus includes the above passions and extends them with card playing, [writing books](/books) and [writing folk music](/music).
+Projektmanagement, künstliche Intelligenz, Cloud und Python sind zentrale Schlagworte, die meinen Arbeitsalltag beschreiben.
 
-Fun fact: I'm also a journeyman house painter, or "Maler- und Lackierergeselle" (not accepting jobs).
-  
+Derzeit arbeite ich als Technical Account Manager bei Adacor Hosting GmbH und fokussiere mich auf Cloud-Migrationsprojekte und konforme KI-Integration.
+
+
+Nach dem Feierabend erweitere ich diese Schwerpunkte ums Schafkopfspielen, Bücherschreiben und das Komponieren von Folksongs auf der Gitarre.
+
+Zudem bin gelernter Maler- und Lackierergeselle (keine Auftragsannahme zurzeit :) ).
+
+
