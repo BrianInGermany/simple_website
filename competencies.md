@@ -10,7 +10,7 @@ Projektmanagement, künstliche Intelligenz, Cloud und Python sind zentrale Schla
 Derzeit arbeite ich als Technical Account Manager bei Adacor Hosting GmbH und fokussiere mich auf Cloud-Migrationsprojekte und konforme KI-Integration.
 
 
-Nach dem Feierabend erweitere ich diese Schwerpunkte ums Schafkopfspielen, Bücherschreiben und das Komponieren von Folksongs auf der Gitarre.
+Nach dem Feierabend erweitere ich diese Schwerpunkte ums [Schafkopfspielen, Bücherschreiben](/books) und das [Komponieren von Folksongs auf der Gitarre](/music).
 
 Zudem bin gelernter Maler- und Lackierergeselle (keine Auftragsannahme zurzeit :) ).
 
