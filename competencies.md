@@ -13,6 +13,6 @@ Derzeit arbeite ich als Technical Account Manager bei Adacor Hosting GmbH und fo
 
 Nach dem Feierabend erweitere ich diese Schwerpunkte ums [Schafkopfspielen, Bücherschreiben](/books) und das [Komponieren von Folksongs auf der Gitarre](/music).
 
-Zudem bin gelernter Maler- und Lackierergeselle (keine Auftragsannahme zurzeit :) ).
+Zudem bin ich gelernter Maler- und Lackierergeselle (keine Auftragsannahme zurzeit :) ).
 
 
