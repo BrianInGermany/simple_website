@@ -4,9 +4,9 @@ title: Kompetenzen
 ---
 
 
-Meine Leidenschaft gilt der technischen Kommunikation – mit dem Ziel, alle Beteiligten auf eine gemeinsame Sprache zu bringen.
+Meine Konzentration liegt in der technischen Kommunikation – mit dem Ziel, alle Beteiligten auf eine gemeinsame Sprache zu bringen.
 
-Projektmanagement, künstliche Intelligenz, Cloud und Python sind zentrale Schlagworte, die meinen Arbeitsalltag beschreiben.
+Projektmanagement, künstliche Intelligenz und Cloud sind drei Schlagworte, die meinen Arbeitsalltag beschreiben.
 
 Derzeit arbeite ich als Technical Account Manager bei Adacor Hosting GmbH und fokussiere mich auf Cloud-Migrationsprojekte und konforme KI-Integration.
 
