@@ -1,7 +1,8 @@
 ---
-
 layout: page
 title: Kompetenzen
+---
+
 
 Meine Leidenschaft gilt der technischen Kommunikation – mit dem Ziel, alle Beteiligten auf eine gemeinsame Sprache zu bringen.
 
