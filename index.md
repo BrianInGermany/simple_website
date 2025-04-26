@@ -11,4 +11,6 @@ Eine Zusammenfassung meiner <a href="/competencies">Kompetenzen</a> finden Sie h
   
 Oder entdecken Sie mein <a href="/curriculum">vollständiges CV</a>.
       
+<!-- ### Portfolio -->
+
 ### Impulse
