@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Kontakt
 ---
 Telefon: <a href="tel:+4917644420427">+49 176 444 20427</a>  
 
