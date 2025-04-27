@@ -4,11 +4,9 @@ title: Brian Junker-Latocha
 ---
 ### Profil
 
-Meine <a href="/contact">Kontaktdaten</a> finden Sie hier.
+Meine <a href="/contact">Kontaktdaten</a>.
 
-Eine Übersicht meiner <a href="/competencies">Kompetenzen</a> finden Sie hier.
-  
-Oder entdecken Sie mein <a href="/curriculum">vollständiges CV</a>.
+Eine Übersicht meiner <a href="/competencies">Kompetenzen</a> und Interessen.
       
 <!-- ### Portfolio -->
 
