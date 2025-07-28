@@ -19,14 +19,14 @@ Die [Offenbach English Speakers](https://offenbachenglishspeakers.com), der Card
 
 Die Englischsprecher:innen treffen sich fast jeden Freitag im Sommer auf dem Après Midi.
 
-Die Kartenspieler treffen sich nach Absprache über WhatsApp zu Schafkopf und 66 in Le Belge oder Bogside.
+Die Kartenspieler treffen sich nach Absprache über WhatsApp zu Schafkopf und 66 im Lokal.
 
-Das KI-Frühstück trifft sich jeden dritten  Dienstag beim Café Ziel.
+Das KI-Frühstück trifft sich jeden dritten Dienstag früh im Café zum Austausch.
 
 ### Musik
 Im Juli letzten Jahres hab ich ein Folkalbum mit eigenen Liedern rausgebracht: [Rhythm & Rhyme](/music)
 
-Außerdem spiele ich regelmäßig Konzerte, hauptsächlich in Offenbach beim Bogside oder Caffe Cuore. Mal alleine, mal mit tollen Musikerfreunden, z.B. im [Open Creek Stringband](https://opencreekstringband.com).
+Außerdem spiele ich regelmäßig Konzerte, hauptsächlich in Offenbach. Mal alleine, mal mit tollen Musikerfreunden, z.B. im [Open Creek Stringband](https://opencreekstringband.com).
 
 ### Sinnbilder Karten
 
