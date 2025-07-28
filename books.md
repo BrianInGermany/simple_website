@@ -33,16 +33,16 @@ Orderable in your local bookstore from Dec. 1st, 2023:
 - ISBN 978-3-384-02767-2
 - Printing and distribution by tredition Verlag
 
-<a href="https://shop.tredition.com/booktitle/Schafkopf_for_Expats/W-869-807-800">Or directly via tredition Verlag</a>
+<a href="https://shop.tredition.com/booktitle/Schafkopf_for_Expats_and_English_Speakers/W-527-601-918">Or directly via tredition Verlag</a>
 
 #### From the internet
 
 You can download a [free courtesy copy](https://junker-latocha.com/assets/schafkopf-junkerlatocha.pdf) here. 
 
-<hr> 
+<!-- <hr> 
 
 <img src="assets/images/Screenshot_20250426-120915.png" alt="kollabbook" width="60%">
 
 > __Kollaborationskultur, die:__ Das gemeinsame Hinarbeiten auf im Konsens beschlossene Ziele.   
 
-(Erscheint voraussichtlich Ende 2025)
+(Erscheint voraussichtlich Ende 2025) -->
