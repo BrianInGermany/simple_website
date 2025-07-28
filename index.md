@@ -6,7 +6,7 @@ title: Brian Junker-Latocha
 
 Meine <a href="/contact">Kontaktdaten</a>.
 
-Ein [Steckbrief](/competencies) meiner Kompetenzen und Interessen.
+Ein [Steckbrief](/profile) meiner Kompetenzen und Interessen.
       
 <!-- ### Portfolio -->
 
