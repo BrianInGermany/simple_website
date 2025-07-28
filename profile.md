@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Steckbrief
+title: Übersicht
 ---
 ## Kompetenzen
 
