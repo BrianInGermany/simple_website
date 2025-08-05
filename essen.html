@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Rezept-Zutaten-Matrix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 1em;
+      background: #fefefe;
+    }
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+      color: #333;
+    }
+    p {
+      text-align: center;
+      font-size: 0.9em;
+      max-width: 600px;
+      margin: 0 auto 1em auto;
+    }
+    #matrix {
+      overflow-x: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 600px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.5em;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    th {
+      background-color: #f9f9f9;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      cursor: pointer;
+    }
+    th:first-child {
+      position: sticky;
+      left: 0;
+      background-color: #f9f9f9;
+      z-index: 3;
+    }
+    td.highlight, th.highlight {
+      background-color: #b3d9ff !important;
+    }
+    @media (max-width: 768px) {
+      table {
+        font-size: 0.8em;
+        min-width: unset;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Rezept-Zutaten-Matrix</h1>
+  <p>Klicke auf eine oder mehrere Zutaten, um passende Rezepte hervorzuheben. Zweiter Klick hebt die Auswahl auf. Nur die Rezepte, die alle ausgewählten Zutaten enthalten, werden hervorgehoben und nach links sortiert. Zutaten, die in diesen Rezepten vorkommen, werden nach oben sortiert.</p>
+  <div id="matrix"></div>
+
+  <script>
+    const data = {       rezepte: {
+        // Deutsche Rezepte
+        "Spinatknödel": ["Bergkäse", "Brot", "Ei", "Spinat", "Zwiebel"],
+        "Linseneintopf": ["Karotte", "Kartoffel", "Linsen", "Sellerie", "Zwiebel"],
+        "Quarkkeulchen": ["Apfel", "Ei", "Mehl", "Magerquark", "Zimt"],
+        "Käse-Lauch-Suppe": ["Frischkäse", "Kartoffel", "Lauch", "Sojahack"],
+        "Grünkernbratlinge": ["Ei", "Grünkern", "Karotte", "Magerquark", "Zwiebel"],
+        "Pfannkuchen mit Pilzrahm": ["Champignon", "Ei", "Mehl", "Milch", "Sahne"],
+        "Käsespätzle": ["Bergkäse", "Ei", "Mehl", "Zwiebel"],
+        "Ofengemüse mit Linsen-Dip": ["Linsen", "Pastinake", "Petersilie", "Rote Bete", "Zitrone"],
+        "Vegetarische Maultaschen": ["Ei", "Magerquark", "Nudelteig", "Spinat"],
+        "Bauernfrühstück": ["Ei", "Kartoffel", "Zwiebel"],
+
+        // Mediterrane Rezepte
+        "Gnocchi mit Zucchini-Tomaten-Sauce": ["Gnocchi", "Zucchini", "Tomaten", "Feta"],
+        "Gemüse-Couscous-Pfanne": ["Couscous", "Paprika", "Zucchini", "Kichererbsen"],
+        "Pasta mit Spinat & Ricotta": ["Pasta", "Spinat", "Ricotta", "Feta"],
+        "Mediterrane Bowl": ["Bulgur", "Ofengemüse", "Tahini-Dressing"],
+        "Shakshuka": ["Eier", "Tomaten", "Paprika", "Kreuzkümmel"],
+        "Ratatouille-Style Pfanne": ["Aubergine", "Zucchini", "Paprika", "Tomate"],
+        "Halloumi-Salat mit Kichererbsen": ["Salat", "Halloumi", "Kichererbsen"],
+        "Ofenkartoffeln mit Kräuterquark": ["Kartoffeln", "Quark", "Kräuter"],
+        "Caprese Sandwich / Wrap": ["Mozzarella", "Tomate", "Basilikum", "Pesto"],
+        "Gemüse-Frittata": ["Eier", "Gemüse nach Wahl"],
+
+        // Koreanische Rezepte
+        "Bibimbap Bowl": ["Reis", "Spinat", "Karotte", "Pilze", "Ei", "Gochujang"],
+        "Kimchi Fried Rice": ["Reis", "Kimchi", "Ei", "Frühlingszwiebel"],
+        "Tteokbokki light": ["Reiskuchen", "Gochujang", "Frühlingszwiebel"],
+        "Gochujang Pasta": ["Pasta", "Gochujang", "Sahne", "Brokkoli"],
+        "Korean Pancakes (Pajeon)": ["Mehl", "Ei", "Frühlingszwiebeln", "Gemüse"],
+        "Doenjang Jjigae": ["Miso", "Tofu", "Gemüse", "Reis"],
+        "Japchae": ["Glasnudeln", "Spinat", "Karotte", "Pilze"],
+        "Kimbap": ["Reis", "Gemüse", "Ei", "Algen"],
+        "Bibim Guksu": ["Soba", "Gurke", "Karotte", "Gochujang-Dressing"],
+        "Korean Tofu Bowl": ["Tofu", "Gochujang-Sauce", "Brokkoli", "Reis"]
+      } }; // deine Rezepte wie gehabt }; // deine Rezepte wie gehabt
+
+    const alleZutaten = [...new Set(Object.values(data.rezepte).flat())].sort((a, b) => a.localeCompare(b, 'de'));
+    const selectedZutaten = new Set();
+
+    function generateColorMap() {
+      const colors = ['#ffd4d4', '#ffe8cc', '#fff5cc', '#e0ffd4', '#d4f0ff', '#e0d4ff', '#ffd4f2', '#d4ffe8', '#f4f4f4', '#f0e0e0'];
+      const map = {};
+      let i = 0;
+      for (const rezept of Object.keys(data.rezepte)) {
+        map[rezept] = colors[i % colors.length];
+        i++;
+      }
+      return map;
+    }
+
+    const farbenProRezept = generateColorMap();
+
+    function toggleZutat(zutat) {
+      if (selectedZutaten.has(zutat)) {
+        selectedZutaten.delete(zutat);
+      } else {
+        selectedZutaten.add(zutat);
+      }
+      renderTable();
+    }
+
+    function renderTable() {
+      const alleRezepte = Object.keys(data.rezepte);
+      const matchingRezepte = [...selectedZutaten].length === 0
+        ? []
+        : alleRezepte.filter(rezept => [...selectedZutaten].every(z => data.rezepte[rezept].includes(z)));
+
+      const restRezepte = alleRezepte.filter(r => !matchingRezepte.includes(r));
+      const sortedRezepte = [...matchingRezepte, ...restRezepte];
+
+      const relevanteZutaten = new Set();
+      for (const rezept of matchingRezepte) {
+        for (const z of data.rezepte[rezept]) relevanteZutaten.add(z);
+      }
+
+      const zutatenSortiert = [...alleZutaten];
+      zutatenSortiert.sort((a, b) => {
+        const inA = relevanteZutaten.has(a) ? 0 : 1;
+        const inB = relevanteZutaten.has(b) ? 0 : 1;
+        return inA - inB || a.localeCompare(b, 'de');
+      });
+
+      const matrix = document.getElementById('matrix');
+      matrix.innerHTML = '';
+
+      const table = document.createElement('table');
+      const thead = table.createTHead();
+      const headerRow = thead.insertRow();
+      headerRow.insertCell().outerHTML = '<th>Zutat / Rezept</th>';
+
+      for (const rezept of sortedRezepte) {
+        const th = document.createElement('th');
+        th.textContent = rezept;
+        if (matchingRezepte.includes(rezept)) {
+          th.classList.add('highlight');
+          th.style.backgroundColor = farbenProRezept[rezept];
+        }
+        headerRow.appendChild(th);
+      }
+
+      const tbody = table.createTBody();
+      for (const zutat of zutatenSortiert) {
+        const row = tbody.insertRow();
+        const th = document.createElement('th');
+        th.textContent = zutat;
+        th.onclick = () => toggleZutat(zutat);
+        if (selectedZutaten.has(zutat)) {
+          th.classList.add('highlight');
+        }
+        row.appendChild(th);
+
+        for (const rezept of sortedRezepte) {
+          const cell = row.insertCell();
+          const zutaten = data.rezepte[rezept];
+          cell.textContent = zutaten.includes(zutat) ? 'X' : '';
+          if (selectedZutaten.has(zutat) && matchingRezepte.includes(rezept)) {
+            cell.classList.add('highlight');
+          }
+        }
+      }
+
+      matrix.appendChild(table);
+    }
+
+    renderTable();
+  </script>
+</body>
+</html>
