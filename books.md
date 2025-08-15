@@ -39,6 +39,9 @@ Orderable in your local bookstore from Dec. 1st, 2023:
 
 You can download a [free courtesy copy](https://junker-latocha.com/assets/schafkopf-junkerlatocha.pdf) here. 
 
+#### Presse
+
+<img src="assets/images/muh.png" alt="muhartikel" width="50%">
 <!-- <hr> 
 
 <img src="assets/images/Screenshot_20250426-120915.png" alt="kollabbook" width="60%">
