@@ -27,11 +27,7 @@ Includes rules for 66, Schnauz, Solitaire and Three-Player Schafkopf.
 Starting Dec. 1st, 2023
 #### From Germany, Austria or Switzerland
 
-Orderable in your local bookstore from Dec. 1st, 2023:
-- 127 pages, paperback
-- 18,00€ 
-- ISBN 978-3-384-02767-2
-- Printing and distribution by tredition Verlag
+Orderable in your local bookstore!
 
 <a href="https://shop.tredition.com/booktitle/Schafkopf_for_Expats_and_English_Speakers/W-527-601-918">Or directly via tredition Verlag</a>
 
@@ -41,4 +37,5 @@ You can download a [free courtesy copy](https://junker-latocha.com/assets/schafk
 
 #### Presse
 
-<img src="assets/images/muh.png" alt="muhartikel" width="75%">
+<img src="assets/images/muh.png" alt="muhartikel" width="75
+%">
