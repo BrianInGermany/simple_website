@@ -41,11 +41,4 @@ You can download a [free courtesy copy](https://junker-latocha.com/assets/schafk
 
 #### Presse
 
-<img src="assets/images/muh.png" alt="muhartikel" width="50%">
-<!-- <hr> 
-
-<img src="assets/images/Screenshot_20250426-120915.png" alt="kollabbook" width="60%">
-
-> __Kollaborationskultur, die:__ Das gemeinsame Hinarbeiten auf im Konsens beschlossene Ziele.   
-
-(Erscheint voraussichtlich Ende 2025) -->
+<img src="assets/images/muh.png" alt="muhartikel" width="75%">
