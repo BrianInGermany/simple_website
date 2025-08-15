@@ -37,5 +37,4 @@ You can download a [free courtesy copy](https://junker-latocha.com/assets/schafk
 
 #### Presse
 
-<img src="assets/images/muh.png" alt="muhartikel" width="75
-%">
+<img src="assets/images/muh.png" alt="muhartikel" width="75%">
