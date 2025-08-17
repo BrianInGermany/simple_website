@@ -14,3 +14,7 @@ passions:
   - title: '<i><a href="/books">Bücher</a></i><br><br>'
   - title: '<i><a href="/gadgets">Erfindungen</a></i><br><br>'
   - title: '<i><a href="/refrain">The IT Singer</a></i>'
+communitys:
+  - title: 'KI-Frühstück Offenbach'
+  - title: 'Offenbach English Speakers'
+  - title: 'Card Table Offenbach'
