@@ -18,3 +18,8 @@ Jede Karte präsentiert zwei gegensätzliche Metaphern, um neue Denkanstöße zu
 SINNBILDER sind Werkzeuge für echtes Zuhören!
 
 <img src="/assets/images/sinnbilderDE.jpg" alt="metacards" width="100%">
+
+## Presse
+
+![28.6.2025 in der Regionalbeilage zur FAZ, Offenbach Post, Frankfurter Neue Presse](https://digitalkiosk.op-online.de/positivevibes/70620295/16)
+
