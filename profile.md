@@ -6,13 +6,13 @@ title: Übersicht
 
 Tagsüber liegt meine Konzentration in der technischen Kommunikation – mit dem Ziel, alle Beteiligten auf eine gemeinsame Sprache zu bringen.
 
-Projektmanagement, künstliche Intelligenz und Cloud sind drei Schlagworte, die meinen Arbeitsalltag beschreiben, der jedoch zur Zeit pausiert.
+Künstliche Intelligenz, Projektmanagement und Cloud sind drei Schlagworte, die meinen Arbeitsalltag beschreiben.
 
-Zudem bin ich gelernter Maler- und Lackierergeselle (keine Auftragsannahme zurzeit :) ).
+Zudem bin ich gelernter Maler- und Lackierergeselle (zurzeit keine Auftragsannahme :) ).
 
 ## Interessen
 
-Abends bin ich leidenschaftlicher Kartenspieler, Community Builder und Songwriter.
+Abends bin ich leidenschaftlicher Community-Builder, Songwriter und Kartenspieler.
 
 ### Communitys
 Die [Offenbach English Speakers](https://offenbachenglishspeakers.com), der Card Table OF und das [KI-Frühstück Offenbach](https://www.meetup.com/offenbach-ai/) sind drei Gruppen, in die ich viel Zeit stecke, aber aus denen ich auch viel Freude und viele neue Freunde gewinne.
@@ -21,10 +21,10 @@ Die Englischsprecher:innen treffen sich fast jeden Freitag im Sommer auf dem Apr
 
 Die Kartenspieler treffen sich nach Absprache über WhatsApp zu Schafkopf und 66 im Lokal.
 
-Das KI-Frühstück trifft sich jeden dritten Dienstag früh im Café zum Austausch.
+Das KI-Frühstück trifft sich jeden dritten Dienstag früh im Café zu Austausch und Inspiration.
 
 ### Musik
-Im Juli letzten Jahres hab ich ein Folkalbum mit eigenen Liedern rausgebracht: [Rhythm & Rhyme](/music)
+Im Juli 2024 hab ich ein Folkalbum mit eigenen Liedern rausgebracht: [Rhythm & Rhyme](/music)
 
 Außerdem spiele ich regelmäßig Konzerte, hauptsächlich in Offenbach. Mal alleine, mal mit tollen Musikerfreunden, z.B. im [Open Creek Stringband](https://opencreekstringband.com).
 
