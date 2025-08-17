@@ -20,6 +20,8 @@ SINNBILDER sind Werkzeuge für echtes Zuhören!
 <img src="/assets/images/sinnbilderDE.jpg" alt="metacards" width="100%">
 
 ## Presse
+<img src="assets/images/PXL_20250628_084124723.MP.jpg" alt="Zeitung" width="100%">
+
 
 ![28.6.2025 in der Regionalbeilage zur FAZ, Offenbach Post, Frankfurter Neue Presse](https://digitalkiosk.op-online.de/positivevibes/70620295/16)
 
