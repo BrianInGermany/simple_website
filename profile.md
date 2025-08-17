@@ -12,7 +12,7 @@ Zudem bin ich gelernter Maler- und Lackierergeselle (zurzeit keine Auftragsannah
 
 ## Interessen
 
-Abends bin ich leidenschaftlicher Community-Builder, Songwriter und Kartenspieler.
+Des Weiteren bin ich leidenschaftlicher Community-Builder, Songwriter und Kartenspieler.
 
 ### Communitys
 Die [Offenbach English Speakers](https://offenbachenglishspeakers.com), der Card Table OF und das [KI-Frühstück Offenbach](https://www.meetup.com/offenbach-ai/) sind drei Gruppen, in die ich viel Zeit stecke, aber aus denen ich auch viel Freude und viele neue Freunde gewinne.
