@@ -10,10 +10,11 @@ entries:
       show_more_text: Archiv...
       show_more_url: archive.html
 passions:
-  - title: '<i><a href="/music">Lieder und Musik</a></i><br><br>'
+  - title: '<i><a href="https://ki-kolloquium.com">Beratung</a></i><br><br>'
+  - title: '<i><a href="/music">Musik</a></i><br><br>'
   - title: '<i><a href="/books">Bücher</a></i><br><br>'
-  - title: '<i><a href="/gadgets">Erfindungen</a></i><br><br>'
-  - title: '<i><a href="/refrain">The IT Singer</a></i>'
+  - title: '<i><a href="/gadgets">Erfindungen</a></i>'
+  
 communitys:
   - title: '<i><a href="https://www.meetup.com/offenbach-ai">KI-Frühstück Offenbach</a></i><br><br>'
   - title: '<i><a href="https://offenbachenglishspeakers.com">Offenbach English Speakers</a></i><br><br>'
