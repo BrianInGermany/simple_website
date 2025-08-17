@@ -31,6 +31,16 @@
     {%- endfor -%}
   {%-endif-%}
 
+
+ {%-if item.communitys-%}
+    {%- for community in item.communitys -%}
+  
+          
+          {{ community.title }}
+        <br><br>
+    {%- endfor -%}
+  {%-endif-%}
+
   {%-if item.entries-%}
     {%-include menu_item.html collection=item.entries-%}
   {%-endif-%}
