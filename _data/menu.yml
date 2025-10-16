@@ -11,8 +11,9 @@ entries:
       show_more_url: archive.html
 passions:
   - title: '<i><a href="https://ki-kolloquium.com">Beratung</a></i><br><br>'
+  - title: '<i><a href="https://insights.jetzt">Digitalisierung von Ladengeschäften</a></i><br><br>'
   - title: '<i><a href="/music">Musik</a></i><br><br>'
-  - title: '<i><a href="/books">Bücher</a></i><br><br>'
+  - title: '<i><a href="/books">Buch</a></i><br><br>'
   - title: '<i><a href="/gadgets">Erfindungen</a></i>'
   
 communitys:
