@@ -4,7 +4,7 @@ title: Übersicht
 ---
 ## Kompetenzen
 
-Meine Leidenschaft liegt im Datencoaching. Ich bringe Unternehmen gerne bei, den Wert ihrer Daten zu erkennen, ihre Aussagen zu verstehen und mithilfe der IT in Unternehmenserfolg zu überführen. Das erfordert eine Menge Übersetzungskunst und unorthodoxes Denken. Und das mach ich ganz gern.
+Meine Leidenschaft liegt im KI- und Datencoaching. Ich bringe Unternehmen gerne bei, den Wert ihrer Daten zu erkennen, ihre Aussagen zu verstehen und mithilfe der IT in Unternehmenserfolg zu überführen. Das erfordert eine Menge Übersetzungskunst und unorthodoxes Denken. Und das mach ich ganz gern.
 
 ## Interessen
 
