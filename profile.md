@@ -4,11 +4,7 @@ title: Übersicht
 ---
 ## Kompetenzen
 
-Tagsüber liegt meine Konzentration in der technischen Kommunikation – mit dem Ziel, alle Beteiligten auf eine gemeinsame Sprache zu bringen.
-
-Künstliche Intelligenz, Projektmanagement und Cloud sind drei Schlagworte, die meinen Arbeitsalltag beschreiben.
-
-Zudem bin ich gelernter Maler- und Lackierergeselle (zurzeit keine Auftragsannahme :) ).
+Meine Leidenschaft liegt im Datencoaching. Ich bringe Unternehmen gerne bei, den Wert ihrer Daten zu erkennen, ihre Aussagen zu verstehen und mithilfe der IT in Unternehmenserfolg zu überführen. Das erfordert eine Menge Übersetzungskunst und unorthodoxes Denken. Und das mach ich ganz gern.
 
 ## Interessen
 
