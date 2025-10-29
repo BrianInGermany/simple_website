@@ -33,7 +33,7 @@ Orderable in your local bookstore!
 
 #### From the internet
 
-You can download a [free courtesy copy](https://junker-latocha.com/assets/schafkopf-junkerlatocha.pdf) here. 
+You can download a [free courtesy copy](/assets/schafkopf-junkerlatocha.pdf) here. 
 
 #### Presse
 
