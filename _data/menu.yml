@@ -10,13 +10,13 @@ entries:
       show_more_text: Archiv...
       show_more_url: archive.html
 passions:
-  - title: '<i><a href="https://ki.junker-latocha.com">KI-Beratung</a></i><br><br>'
-  - title: '<i><a href="https://insights.jetzt">Innenstadt-Ladengeschäften helfen</a></i><br><br>'
+  - title: '<i><a href="https://junker-latocha.com">KI-Beratung</a></i><br><br>'
+  - title: '<i><a href="https://laufkundschaft.com">Innenstadt-Ladengeschäften helfen</a></i><br><br>'
   - title: '<i><a href="/music">Musik</a></i><br><br>'
   - title: '<i><a href="/books">Buch</a></i><br><br>'
   - title: '<i><a href="/gadgets">Erfindungen</a></i>'
   
 communitys:
-  - title: '<i><a href="https://www.meetup.com/offenbach-ai">KI-Frühstück Offenbach</a></i><br><br>'
+  - title: '<i>KI-Frühstück Offenbach</i><br><br>'
   - title: '<i><a href="https://offenbachenglishspeakers.com">Offenbach English Speakers</a></i><br><br>'
   - title: '<i>Card Table Offenbach</i>'
